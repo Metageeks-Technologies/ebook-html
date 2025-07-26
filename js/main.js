@@ -45,6 +45,36 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Discount applied. After - discountApplied:', discountApplied, 'discountCheckbox.checked:', discountCheckbox.checked);
         }
     });
+
+    // Timer logic
+    const offerTimerElement = document.getElementById('offer-timer');
+    const initialDuration = 8 * 60 * 60; // 8 hours in seconds
+    let timerInterval;
+
+    function startTimer(duration) {
+        let timer = duration;
+        let hours, minutes, seconds;
+
+        timerInterval = setInterval(() => {
+            hours = parseInt(timer / 3600, 10);
+            minutes = parseInt((timer % 3600) / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            offerTimerElement.textContent = `⚡ Offer Expires in: ${hours}:${minutes}:${seconds}`;
+
+            if (--timer < 0) {
+                clearInterval(timerInterval);
+                startTimer(initialDuration); // Reset to 8 hours
+            }
+        }, 1000);
+    }
+
+    startTimer(initialDuration); // Start the timer on page load
+
 });
 
 function openUpgradePopup() {
