@@ -19,8 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const discountMessageBottom = document.getElementById('discountMessageBottom');
     const discountCheckbox = document.getElementById('discountCheckbox');
     const priceDisplayButton = document.getElementById('priceDisplayButton');
+    const ctaCourse4999 = document.getElementById('cta-course-4999');
+    const ctaCourseMain = document.getElementById('cta-course-main');
+    const ctaEbook19 = document.getElementById('cta-ebook-19');
 
-    console.log('Elements retrieved:', { applyDiscountBtn, priceDisplayBottom, discountMessageBottom, discountCheckbox, priceDisplayButton });
+    console.log('Elements retrieved:', { applyDiscountBtn, priceDisplayBottom, discountMessageBottom, discountCheckbox, priceDisplayButton, ctaCourse4999, ctaCourseMain, ctaEbook19 });
 
     let discountApplied = false;
     const originalPrice = 4999;
@@ -80,6 +83,45 @@ document.addEventListener('DOMContentLoaded', function() {
 function openUpgradePopup() {
     document.getElementById('popup1').classList.remove('hidden');
 }
+
+function closePopup1() {
+    document.getElementById('popup1').classList.add('hidden');
+}
+
+// CTA button links
+const ebookLink = "https://superprofile.bio/vp/K78CEGc3";
+const course4999Link = "https://rzp.io/rzp/YUMtn9G";
+const course499Link = "https://rzp.io/rzp/ycUwCd3b";
+
+// Add event listeners to the new CTA buttons
+document.addEventListener('DOMContentLoaded', function() {
+    const ctaCourse4999 = document.getElementById('cta-course-4999');
+    const ctaCourseMain = document.getElementById('cta-course-main');
+    const ctaEbook19 = document.getElementById('cta-ebook-19');
+    const discountCheckbox = document.getElementById('discountCheckbox');
+
+    if (ctaCourse4999) {
+        ctaCourse4999.addEventListener('click', function() {
+            window.location.href = course4999Link;
+        });
+    }
+
+    if (ctaCourseMain) {
+        ctaCourseMain.addEventListener('click', function() {
+            if (discountCheckbox.checked) {
+                window.location.href = course499Link;
+            } else {
+                window.location.href = course4999Link;
+            }
+        });
+    }
+
+    if (ctaEbook19) {
+        ctaEbook19.addEventListener('click', function() {
+            window.location.href = ebookLink;
+        });
+    }
+});
 
 function closePopup1() {
     document.getElementById('popup1').classList.add('hidden');
