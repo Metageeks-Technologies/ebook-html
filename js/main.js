@@ -78,27 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     startTimer(initialDuration); // Start the timer on page load
 
-});
-
-function openUpgradePopup() {
-    document.getElementById('popup1').classList.remove('hidden');
-}
-
-function closePopup1() {
-    document.getElementById('popup1').classList.add('hidden');
-}
-
-// CTA button links
-const ebookLink = "https://superprofile.bio/vp/K78CEGc3";
-const course4999Link = "https://rzp.io/rzp/YUMtn9G";
-const course499Link = "https://rzp.io/rzp/ycUwCd3b";
-
-// Add event listeners to the new CTA buttons
-document.addEventListener('DOMContentLoaded', function() {
-    const ctaCourse4999 = document.getElementById('cta-course-4999');
-    const ctaCourseMain = document.getElementById('cta-course-main');
-    const ctaEbook19 = document.getElementById('cta-ebook-19');
-    const discountCheckbox = document.getElementById('discountCheckbox');
+    // CTA button links
+    const ebookLink = "https://superprofile.bio/vp/K78CEGc3";
+    const course4999Link = "https://rzp.io/rzp/YUMtn9G";
+    const course499Link = "https://rzp.io/rzp/ycUwCd3b";
 
     if (ctaCourse4999) {
         ctaCourse4999.addEventListener('click', function() {
@@ -123,9 +106,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+function openUpgradePopup() {
+    document.getElementById('popup1').classList.remove('hidden');
+}
+
 function closePopup1() {
     document.getElementById('popup1').classList.add('hidden');
+    openPopup2();
 }
+
+function openPopup2() {
+    document.getElementById('popup2').classList.remove('hidden');
+}
+
+function closePopup2() {
+    document.getElementById('popup2').classList.add('hidden');
+    openPopup3();
+}
+
+function openPopup3() {
+    document.getElementById('popup3').classList.remove('hidden');
+}
+
+function closePopup3() {
+    document.getElementById('popup3').classList.add('hidden');
+}
+
+
 
 function animatePrice(start, end, element1, element2) {
     let current = start;
