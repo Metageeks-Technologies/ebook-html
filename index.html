@@ -24,6 +24,27 @@
         .hover\:bg-primary\/90:hover { background-color: rgba(79, 70, 229, 0.9); }
         .hover\:bg-accent\/90:hover { background-color: rgba(236, 72, 153, 0.9); }
         .hover\:bg-accent-foreground\/90:hover { background-color: rgba(253, 242, 248, 0.9); }
+        .backdrop-blur-20 {
+            backdrop-filter: blur(15px);
+        }
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+            }
+        }
     </style>
 </head>
 <body class="min-h-screen bg-background relative">
@@ -261,27 +282,232 @@
                 </p>
             </div>
         </footer>
-
-        <!-- Upgrade Popup Placeholder -->
-        <div id="upgrade-popup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-            <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center">
-                <h3 class="text-2xl font-bold mb-4">Get Instant Access!</h3>
-                <p class="mb-6">This is a placeholder for the upgrade popup. Its functionality will be implemented with vanilla JavaScript.</p>
-                <button class="bg-primary text-white px-6 py-2 rounded-lg" onclick="closeUpgradePopup()">Close</button>
-            </div>
+<!-- Popup1 -->
+<!-- Popup1 -->
+<div id="popup1" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50" onclick="if (event.target.id === 'popup1') closePopup1();">
+    <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
+        <!-- Top Blue Section -->
+        <div class="bg-[#0d90ef] text-white p-6 rounded-t-lg relative">
+            <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup1()">
+                &times;
+            </button>
+            <h3 class="text-3xl md:text-4xl font-bold text-center leading-tight py-4">
+                Special Upgrade: 7-Day Video<br />Course & Personal Call
+            </h3>
         </div>
+
+        <!-- Middle Red Bordered Section -->
+        <div class="p-6 border-2 border-red-500 rounded-b-lg mx-4 -mt-4 bg-white relative z-10">
+            <p class="text-center text-red-600 font-bold text-xl mb-2">YOU'VE BEEN UPGRADED!</p>
+            <p class="text-center text-gray-800 text-lg leading-relaxed">
+                You've been upgraded to a <span class="font-bold">₹4999</span> video course<br />
+                with personal coaching! Get it for just <span class="font-bold">₹499</span><br />
+                today only!
+            </p>
+        </div>
+
+        <!-- Bottom Content -->
+        <div class="p-6 space-y-6">
+            <p class="text-center text-gray-700 text-base">
+                Smart professionals know that investing in the right<br />
+                tools is the key to financial freedom. This premium<br />
+                package is your express ticket to success.
+            </p>
+
+            <button class="w-full flex items-center justify-center space-x-2 bg-white border border-gray-300 rounded-lg py-3 px-4 shadow-sm text-gray-800 text-lg font-semibold">
+                <span class="text-red-500 text-2xl">🍕</span>
+                <span>Same cost as lunch - <span class="text-[#0d90ef]">Life-changing results</span></span>
+            </button>
+
+            <button class="pulse-button w-full bg-red-600 text-white py-4 rounded-lg shadow-lg text-xl font-bold">
+                90% OFF - Limited Time!
+            </button>
+
+            <!-- Progress Bar -->
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-[#0d90ef] h-2.5 rounded-full" style="width: 95%;"></div>
+            </div>
+            <p class="text-center text-red-600 text-sm font-semibold">95% of spots claimed - Act Now!</p>
+        <!-- New content from second screenshot -->
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4 relative">      
+
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                SPECIAL UPGRADE
+            </div>
+            <h3 class="text-2xl font-bold text-center mt-4 mb-4">Complete Success System</h3>
+            <div class="text-center text-lg font-semibold text-[#0d90ef] mb-2">
+                7-Day Course + eBook + 1:1 Call with Sahil
+            </div>
+            <div class="text-center text-sm text-gray-500 mb-6">
+                (₹17,999 value)
+            </div>
+
+            <ul class="space-y-3 text-gray-700 text-base">
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">Daily video lessons</span> guiding you step-by-step through each day's tasks</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">7-day structured plan</span> to launch your first sales campaign</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">Complementary 1:1 call</span> with Sahil after course completion</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">Lifetime access</span> to all course materials and updates</span>
+                </li>
+            </ul>
+
+            <div class="bg-[#e0f2fe] border border-[#0d90ef] rounded-lg p-4 flex items-center space-x-4 mt-6">
+                <img src="https://metageeks-technologies.github.io/ebook-html/assets/author-photo.jpg" alt="Raakshita Kapoor" class="w-20 h-20 rounded-full object-cover border-2 border-[#0d90ef]">
+                <div>
+                    <p class="font-bold text-[#0d90ef] text-lg">Raakshita Kapoor</p>
+                    <p class="text-gray-700 text-sm">Dropshipping Expert | ₹74 Lakhs in 6 Months</p>
+                </div>
+            </div>
+
+            <div class="bg-[#e6ffe6] border border-green-500 rounded-lg p-4 text-center mt-6">
+                <p class="text-green-700 font-bold text-lg mb-2">Video Course Success Rate</p>
+                <p class="text-green-700 font-bold text-5xl mb-2">97%</p>
+                <p class="text-gray-700 text-sm">
+                    of students who completed the 7-day<br />
+                    course got their first sale within 30 days
+                </p>
+            </div>
+            <p class="text-center text-gray-500 text-lg mt-4">₹4999</p>
+        </div>
+        </div>
+<!-- New content from third screenshot -->
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4">
+            <p class="text-center text-red-600 font-bold text-4xl mb-4">₹4999</p>
+            <div class="bg-[#e0f2fe] border border-[#0d90ef] rounded-lg p-4 text-center mb-6">
+                <p class="text-[#0d90ef] font-semibold text-lg">Apply <span class="font-bold">90OFF</span> discount code</p>
+                <p class="text-[#0d90ef] text-sm">(Today Only)</p>
+                <div class="flex justify-center mt-2 space-x-4">
+                    <div class="w-6 h-6 border border-gray-400 rounded"></div>
+                    <div class="w-6 h-6 border border-gray-400 rounded"></div>
+                </div>
+            </div>
+            <button class="w-full bg-red-600 text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2">
+                <span class="text-2xl">⚡</span>
+                <span>Get Full System for ₹4999</span>
+            </button>
+            <p class="text-center text-red-600 text-sm font-semibold mt-2">⚡ Offer Expires in: 17:44:03</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4">
+            <h3 class="text-2xl font-bold text-center mb-4">Just the eBook</h3>
+            <div class="text-center text-lg font-semibold text-[#0d90ef] mb-2">
+                Weekend Dropshipping Blueprint
+            </div>
+            <div class="text-center text-sm text-gray-500 mb-6">
+                (₹199 value)
+            </div>
+
+            <ul class="space-y-3 text-gray-700 text-base">
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">Step-by-step guide</span> to launch your store in a weekend</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">Proven strategies</span> tailored for the Indian market</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">Lifetime access</span> to eBook updates</span>
+                </li>
+                <li class="flex items-start space-x-2">
+                    <span class="text-[#0d90ef] font-bold">✓</span>
+                    <span><span class="font-bold text-[#0d90ef]">Quick start</span> with minimal investment</span>
+                </li>
+            </ul>
+            <p class="text-center text-gray-500 text-lg mt-4">₹199</p>
+            <p class="text-center text-red-600 font-bold text-5xl mb-4">₹19</p>
+            <button class="w-full bg-gray-800 text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2">
+                <span class="text-2xl">⬇️</span>
+                <span>Get eBook Only for ₹19</span>
+            </button>
+        
+
+
+        <div class="bg-red-100 border border-red-500 rounded-lg p-4 text-center mt-6">
+            <div class="flex items-center justify-center mb-2">
+                <svg class="w-8 h-8 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                </svg>
+                <p class="text-gray-800 text-lg font-semibold">Our students have generated over ₹3 Crore in combined revenue!</p>
+            </div>
+            <a href="#" class="text-blue-600 underline text-sm">No, I'll live the same life for the next 10 years</a>
+        </div>
+        <div class="bg-grey-100 border border-grey-500 rounded-lg p-4 text-center mt-6">
+            <p class="font-bold text-lg">Important: 93% of people who invest in the full system achieve their income goals within 6 months.</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popup2 -->
+<div id="popup2" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50" onclick="if (event.target.id === 'popup2') closePopup2();">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
+        <h3 class="text-2xl font-bold mb-4">Popup 2: Upsell Option 1</h3>
+        <p class="mb-6">This is the second popup. Would you like to take this upsell offer?</p>
+        <button class="bg-[#ffc225] text-black px-6 py-2 rounded-lg hover:bg-[#d7a42c] mr-4">
+            Yes, I want this!
+        </button>
+        <button class="bg-gray-300 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-400" onclick="closePopup2()">
+            No, thanks
+        </button>
+    </div>
+</div>
+
+<!-- Popup3 -->
+<div id="popup3" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50" onclick="if (event.target.id === 'popup3') closePopup3();">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
+        <h3 class="text-2xl font-bold mb-4">Popup 3: Final Upsell Offer</h3>
+        <p class="mb-6">This is the final popup. Don't miss out on this last chance!</p>
+        <button class="bg-[#ffc225] text-black px-6 py-2 rounded-lg hover:bg-[#d7a42c] mr-4">
+            Claim Final Offer!
+        </button>
+        <button class="bg-gray-300 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-400" onclick="closePopup3()">
+            No, thanks
+        </button>
+    </div>
+</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://metageeks-technologies.github.io/ebook-html/js/main.js"></script>
     <script>
-        function openUpgradePopup() {
-            document.getElementById('upgrade-popup').classList.remove('hidden');
+        function openPopup1() {
+            document.body.classList.add('backdrop-blur-20');
+            document.getElementById('popup1').classList.remove('hidden');
         }
 
-        function closeUpgradePopup() {
-            document.getElementById('upgrade-popup').classList.add('hidden');
+        function closePopup1() {
+            document.getElementById('popup1').classList.add('hidden');
+            document.getElementById('popup2').classList.remove('hidden');
         }
+
+        function closePopup2() {
+            document.getElementById('popup2').classList.add('hidden');
+            document.getElementById('popup3').classList.remove('hidden');
+        }
+
+        function closePopup3() {
+            document.getElementById('popup3').classList.add('hidden');
+            document.body.classList.remove('backdrop-blur-20');
+        }
+
+        // Attach openPopup1 to all CTA buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctaButtons = document.querySelectorAll('button[onclick="openUpgradePopup()"]');
+            ctaButtons.forEach(button => {
+                button.onclick = openPopup1;
+            });
+        });
     </script>
 </body>
 </html>
