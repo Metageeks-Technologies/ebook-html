@@ -143,7 +143,8 @@ function proceedToPaymentAndClosePopup3() {
     console.log('proceedToPaymentAndClosePopup3 called: Hiding popup3 and attempting to open popup4');
     // window.location.href = 'https://rzp.io/rzp/uE3FN3I '; // Removed immediate redirection
     document.getElementById('popup3').classList.add('hidden'); // Explicitly hide popup3
-    openPopup4(); // Directly open popup4
+    //openPopup4(); // Directly open popup4
+    window.location.href = 'https://rzp.io/rzp/uE3FN3I ';
 }
 
 function openPopup4() {
