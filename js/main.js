@@ -104,6 +104,12 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = ebookLink;
         });
     }
+    const noContinueButton = document.getElementById('noContinueButton');
+    if (noContinueButton) {
+        noContinueButton.addEventListener('click', function() {
+            closePopup2(); // This will trigger the next popup in sequence
+        });
+    }
 });
 
 function openUpgradePopup() {
