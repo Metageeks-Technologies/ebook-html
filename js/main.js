@@ -29,25 +29,35 @@ document.addEventListener('DOMContentLoaded', function() {
     const originalPrice = 4999;
     const discountedPrice = 499;
 
-    applyDiscountBtn.addEventListener('click', function() {
-        console.log('Button clicked!');
-        console.log('Before click - discountApplied:', discountApplied, 'discountCheckbox.checked:', discountCheckbox.checked);
-        if (discountApplied) {
-            // Remove discount
-            animatePrice(discountedPrice, originalPrice, priceDisplayBottom, priceDisplayButton);
-            discountMessageBottom.classList.add('hidden');
-            discountCheckbox.checked = false;
-            discountApplied = false;
-            console.log('Discount removed. After - discountApplied:', discountApplied, 'discountCheckbox.checked:', discountCheckbox.checked);
-        } else {
+    function handleDiscountToggle() {
+        console.log('Discount toggle triggered!');
+        console.log('Before toggle - discountApplied:', discountApplied, 'discountCheckbox.checked:', discountCheckbox.checked);
+
+        if (discountCheckbox.checked) {
             // Apply discount
             animatePrice(originalPrice, discountedPrice, priceDisplayBottom, priceDisplayButton);
             discountMessageBottom.classList.remove('hidden');
-            discountCheckbox.checked = true;
             discountApplied = true;
             console.log('Discount applied. After - discountApplied:', discountApplied, 'discountCheckbox.checked:', discountCheckbox.checked);
+        } else {
+            // Remove discount
+            animatePrice(discountedPrice, originalPrice, priceDisplayBottom, priceDisplayButton);
+            discountMessageBottom.classList.add('hidden');
+            discountApplied = false;
+            console.log('Discount removed. After - discountApplied:', discountApplied, 'discountCheckbox.checked:', discountCheckbox.checked);
         }
+    }
+
+    applyDiscountBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default button behavior (e.g., form submission)
+        console.log('Button clicked!');
+        // Toggle the checkbox state
+        discountCheckbox.checked = !discountCheckbox.checked;
+        discountCheckbox.dispatchEvent(new Event('change')); // Manually dispatch change event
     });
+
+    // Add a change event listener to the discount checkbox
+    discountCheckbox.addEventListener('change', handleDiscountToggle);
 
     // Timer logic
     const offerTimerElement = document.getElementById('offer-timer');
@@ -79,9 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
     startTimer(initialDuration); // Start the timer on page load
 
     // CTA button links
-    const ebookLink = "https://superprofile.bio/vp/K78CEGc3";
+    const ebookLink = "https://rzp.io/rzp/eijqBTh"; // Rs. 399 link
     const course4999Link = "https://rzp.io/rzp/YUMtn9G";
     const course499Link = "https://rzp.io/rzp/ycUwCd3b";
+    
 
     if (ctaCourse4999) {
         ctaCourse4999.addEventListener('click', function() {
@@ -141,9 +152,8 @@ function closePopup3() {
 }
 function proceedToPaymentAndClosePopup3() {
     console.log('proceedToPaymentAndClosePopup3 called: Hiding popup3 and attempting to open popup4');
-    // window.location.href = 'https://rzp.io/rzp/uE3FN3I '; // Removed immediate redirection
+    window.location.href = 'https://rzp.io/rzp/uE3FN3I ';
     document.getElementById('popup3').classList.add('hidden'); // Explicitly hide popup3
-    //openPopup4(); // Directly open popup4
     window.location.href = 'https://rzp.io/rzp/uE3FN3I ';
 }
 
@@ -154,6 +164,7 @@ function openPopup4() {
 
 function closePopup4() {
     document.getElementById('popup4').classList.add('hidden');
+    window.location.href = 'index.html'; // Redirect to index page
 }
 
 

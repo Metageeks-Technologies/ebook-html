@@ -3,338 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go From Lonely to Loved in just 4 Weeks!</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Go from Lonely to Loved</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom styles if needed, though the goal is inline Tailwind */
-        .text-primary { color: #4F46E5; } /* Example color, adjust as per original project's theme */
-        .text-accent { color: #EC4899; } /* Example color, adjust as per original project's theme */
-        .bg-secondary\/20 { background-color: rgba(229, 231, 235, 0.2); } /* Example color, adjust as per original project's theme */
-        .border-primary\/20 { border-color: rgba(79, 70, 229, 0.2); } /* Example color, adjust as per original project's theme */
-        .bg-accent { background-color: #EC4899; } /* Example color, adjust as per original project's theme */
-        .bg-accent-foreground { background-color: #FDF2F8; } /* Example color, adjust as per original project's theme */
-        .text-accent-foreground { color: #EC4899; } /* Example color, adjust as per original project's theme */
-        .text-muted-foreground { color: #6B7280; } /* Example color, adjust as per original project's theme */
-        .bg-secondary\/30 { background-color: rgba(229, 231, 235, 0.3); } /* Example color, adjust as per original project's theme */
-        .text-secondary { color: #6B7280; } /* Example color, adjust as per original project's theme */
-        .bg-background { background-color: #FFFFFF; } /* Example color, adjust as per original project's theme */
-        .text-foreground { color: #1F2937; } /* Example color, adjust as per original project's theme */
-        .text-foreground\/80 { color: rgba(31, 41, 55, 0.8); } /* Example color, adjust as per original project's theme */
-        .hover\:bg-primary\/90:hover { background-color: rgba(79, 70, 229, 0.9); }
-        .hover\:bg-accent\/90:hover { background-color: rgba(236, 72, 153, 0.9); }
-        .hover\:bg-accent-foreground\/90:hover { background-color: rgba(253, 242, 248, 0.9); }
-        .backdrop-blur-20 {
-            backdrop-filter: blur(15px);
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #8A2BE2, #4F46E5, #FF8C00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .pulse-button {
             animation: pulse 2s infinite;
         }
-
         @keyframes pulse {
-            0% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
-            }
-            70% {
-                transform: scale(1.05);
-                box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
-            }
-            100% {
-                transform: scale(1);
-                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
-            }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
-
-        .progress-striped {
-            background-image: linear-gradient(
-                45deg,
-                rgba(255, 255, 255, 0.15) 25%,
-                transparent 25%,
-                transparent 50%,
-                rgba(255, 255, 255, 0.15) 50%,
-                rgba(255, 255, 255, 0.15) 75%,
-                transparent 75%,
-                transparent
-            );
-            background-size: 1rem 1rem;
-            animation: progress-bar-stripes 1s linear infinite;
+        .cta-button {
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
         }
-
-        @keyframes progress-bar-stripes {
-            from {
-                background-position: 1rem 0;
-            }
-            to {
-                background-position: 0 0;
-            }
+        .cta-button:hover {
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<body class="min-h-screen bg-background relative">
-    <div class="min-h-screen bg-background">
+<body class="bg-white text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-4">
         <!-- Header Section -->
-        <div class="text-center py-8 px-4">
-            <h1 class="text-4xl md:text-6xl font-bold text-primary italic mb-4">
-                Go From Lonely to Loved in just<br />
-                1 Week!
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+                Done with heartbreak and chasing? Go from Lonely to Loved This Weekend!
             </h1>
-            <p class="text-xl md:text-2xl text-foreground font-semibold mb-8">
-                This Secret guide has helped 752+ smart men & women find clarity, connection, and commitment.
+            <p class="text-lg md:text-xl text-gray-600 font-semibold">
+                Start attracting emotionally available partners <span class="bg-yellow-300 italic px-2 py-1 rounded">in just 7 days!</span>
             </p>
+             <div class="bg-green-500 rounded-lg p-4 mt-4">
+                 <p class="text-lg md:text-xl text-white font-bold">
+                     The Proven System That's Helped 752+ Indian Men & Women find connection and commitment. Without loosing self respect.
+                 </p>
+             </div>
+        </header>
+
+        <!-- Patterns Section -->
+        <section class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-12">
+            <h2 class="text-xl font-bold text-red-700 mb-4">Are These Patterns Keeping You Stuck in Love?</h2>
+            <ul class="space-y-2 text-gray-700">
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Attracting the same emotionally unavailable people</li>
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Confusing attention with real connection</li>
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Overgiving to prove your worth</li>
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Saying “I’m fine” when you’re secretly lonely</li>
+            </ul>
+        </section>
+
+        <!-- Main Offer Section -->
+        <section id="main-cta" class="grid md:grid-cols-2 gap-8 items-center mb-12">
+            <div class="bg-blue-50 p-4 rounded-lg border-2 border-blue-200 flex justify-center">
+                <img src="assets/ebook3d-.jpg" alt="EBOOK Photo" class="w-full max-w-sm">
+            </div>
+            <div class="bg-blue-50 p-6 rounded-lg border-2 border-blue-200 text-center">
+                <h3 class="text-3xl font-bold">Only <span class="text-red-500">₹19</span> Today! <s class="text-gray-500">₹199</s></h3>
+                <p class="bg-amber-500 text-white font-bold py-2 px-4 rounded-lg my-4 text-xl">90% OFF - Limited Time!</p>
+                <p class="text-sm text-gray-600 mb-4">Offer ends tonight!</p>
+                <!-- Discount Section -->
+                <!-- <div class="mb-4">
+                    <label for="discountCheckbox" class="flex items-center justify-center space-x-2 cursor-pointer">
+                        <input type="checkbox" id="discountCheckbox" class="form-checkbox h-5 w-5 text-blue-600">
+                        <span class="text-gray-700 font-semibold">Apply 90% Discount</span>
+                    </label>
+                    <button id="applyDiscountBtn" class="mt-2 bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+                        Apply Discount
+                    </button>
+                    <p id="discountMessageBottom" class="text-green-600 font-semibold mt-2 hidden">Discount Applied!</p>
+                </div> -->
+                <a onclick="openUpgradePopup()" class="w-full bg-red-500 text-white font-bold py-4 px-8 rounded-lg text-2xl flex items-center justify-center gap-2 cta-button">
+                                    DOWNLOAD NOW FOR ₹19 (offer ends tonight!)
+                                </a>
+            </div>
+        </section>
+        
+        <!-- Offer Timer -->
+        <div id="offer-timer" class="text-center text-red-600 font-bold text-xl mb-8">
+            ⚡ Offer Expires in: 08:00:00
         </div>
 
-        <!-- Main Content Section -->
-        <div class="max-w-7xl mx-auto px-4 py-8">
-            <div class="grid lg:grid-cols-2 gap-8 items-center">
-                <!-- Left side - Book images -->
-                <div class="flex justify-center items-center space-x-8">
-                    <div class="transform rotate-12">
-                        <img
-                            src="https://metageeks-technologies.github.io/ebook-html/assets/book-cover.jpg"
-                            alt="Lonely to Loved Book Cover"
-                            class="w-48 h-64 object-cover shadow-lg rounded"
-                        />
-                    </div>
-                    <div class="transform -rotate-6">
-                        <img
-                            src="https://metageeks-technologies.github.io/ebook-html/assets/book-cover.jpg"
-                            alt="Lonely to Loved Book Cover"
-                            class="w-48 h-64 object-cover shadow-lg rounded"
-                        />
-                    </div>
-                    <!-- Arrow pointing right -->
-                    <div class="hidden lg:block">
-                        <svg class="w-16 h-16 text-secondary" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                        </svg>
-                    </div>
-                </div>
-
-                <!-- Right side - CTA Box -->
-                <div id="cta-section">
-                    <div class="bg-secondary/20 border-2 border-primary/20 rounded-lg shadow-sm">
-                        <div class="p-6">
-                            <div class="text-center mb-4">
-                                <button
-                                    class="bg-[#0d90ef] hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold rounded-lg shadow-lg"
-                                    onclick="openUpgradePopup()"
-                                >
-                                    Here's What Makes This eBook Different!
-                                </button>
-                                <h4 class="p-4">Why “Lonely to Loved” is Not Just Another Love Advice Book</h4>
-                            </div>
-
-                            <div class="space-y-3 text-sm text-foreground/80">
-                                <div class="flex items-start space-x-2">
-                                    <span class="text-green-500 font-bold">✓</span>
-                                    <span>Weekend Love Reset: No more overthinking. This step-by-step guide helps you shift your love life in just 48 hours — even if you feel lost right now.</span>
-                                </div>
-                                <div class="flex items-start space-x-2">
-                                    <span class="text-green-500 font-bold">✓</span>
-                                    <span>From Ghosted to Chosen: It shows you how to stop chasing and start attracting. People have gone from heartbreak to relationships that actually feel good.</span>
-                                </div>
-                                <div class="flex items-start space-x-2">
-                                    <span class="text-green-500 font-bold">✓</span>
-                                    <span>Just 20 Minutes a Day: No fluff. No drama. You just need 20 mins a day to start showing up as the most magnetic version of you.</span>
-                                </div>
-                                <div class="flex items-start space-x-2">
-                                    <span class="text-green-500 font-bold">✓</span>
-                                    <span>Made for India’s Love Culture: Whether it&apos;s arranged setups or confusing situationships — this book speaks your language and your reality.</span>
-                                </div>
-                                <div class="flex items-start space-x-2">
-                                    <span class="text-green-500 font-bold">✓</span>
-                                    <span>Real People, Real Results: Hundreds have used these tools to stop feeling invisible and finally feel seen, wanted, and loved.</span>
-                                </div>
-                                <div class="flex items-start space-x-2">
-                                    <span class="text-green-500 font-bold">✓</span>
-                                    <span>Yours Forever: Once you grab it, it&apos;s yours. And we&apos;ll keep sending bonus tips and love reset tools, free for life..</span>
-                                </div>
-                            </div>
-                            <div class="flex justify-around items-center text-center mt-4">
-                                <div class="flex flex-col items-center">
-                                    <span class="text-yellow-500 text-3xl mb-1">⭐</span>
-                                    <p class="text-sm font-semibold text-foreground">750+ Success Stories</p>
-                                </div>
-                                <div class="flex flex-col items-center">
-                                    <span class="text-blue-500 text-3xl mb-1">🛡️</span>
-                                    <p class="text-sm font-semibold text-foreground">Money-Back Guarantee</p>
-                                </div>
-                            </div>
-
-                            <div class="mt-6 text-center">
-                                <button
-                                    class="bg-[#ffc225] hover:bg-[#d7a42c] text-black hover:text-white px-8 py-4 text-xl font-bold rounded-lg shadow-lg w-full"
-                                    onclick="openUpgradePopup()"
-                                >
-                                    Get Access Now At Just Rs 19!
-                                </button>
-                            </div>
-
-                            <div class="mt-4 text-xs text-center text-muted-foreground">
-                                🔒 By providing us with your information you are consenting to the collection and use of your information in accordance with our Terms of Service and Privacy Policy.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Social Proof -->
+        <div class="text-center mb-8">
+            <p class="bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-full inline-block mb-4">
+                42 people purchased in the last 24 hours
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-600 mb-12">
+                <span class="bg-gray-100 py-1 px-3 rounded-full">✓ 750+ Success Stories</span>
+                <span class="bg-gray-100 py-1 px-3 rounded-full">✓ Money-Back Guarantee</span>
+                <span class="bg-gray-100 py-1 px-3 rounded-full">✓ 264+ Clients currently in Love Reset</span>
             </div>
         </div>
+
+        <!-- Student Achievements -->
+        <section class="text-center my-16">
+            <h2 class="text-3xl font-bold text-blue-800 mb-2">See What Our Students Have Achieved</h2>
+            <p class="text-gray-600 mb-8">Real people, real results - using the exact strategies in our blueprint</p>
+            <p>Vikram from Surat just purchased!</p>
+            <p>Sneha from Ahemdabad just purchased!</p>
+            <p>(Testimonials from Google Drive)</p>
+        </section>
+
+        <!-- Why this is the perfect opportunity -->
+        <section class="bg-blue-50 p-8 rounded-lg my-16 border border-blue-200">
+            <h2 class="text-2xl font-bold text-center text-blue-800 mb-6">Why This is the Perfect Opportunity for High-Functioning Individuals</h2>
+            <p class="text-center text-gray-600 mb-8">As High-Functioning  Professionals in India, we’re often taught to excel in careers but left clueless when it comes to love, clarity, and connection. Between family expectations, busy work schedules, and emotional burnout, our personal lives quietly suffer.</p>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>No emotional jargon or therapy talk – Just clear, practical tools that fit into your busy lifestyle</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Minimal time commitment – Designed for professionals with only 20–30 minutes a day to spare</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>No dramatic life changes needed – You don’t need to quit your job or change cities to feel peace and connection</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Culturally aware & deeply relevant – Built with Indian family dynamics, boundaries, and societal pressure in mind</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Low risk, high reward – One small shift in your patterns now can change your next 10 years of relationships</div></li>
+            </ul>
+        </section>
+
+        <!-- Common Concerns -->
+        <section class="bg-yellow-50 p-8 rounded-lg my-16 border border-yellow-200">
+            <h2 class="text-2xl font-bold text-center text-yellow-800 mb-6">💬 Common Concerns – Sorted</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="font-bold text-lg mb-1">“I don’t have time.”</h3>
+                    <p class="text-gray-700">This is made for busy people - just 20 minutes a day or a few hours on the weekend is all you need.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-1">“I’m not good with deep emotional stuff.”</h3>
+                    <p class="text-gray-700">No worries- everything is broken down into easy steps. No heavy therapy talk, just real tools.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-1">“What if it doesn’t work for me?”</h3>
+                    <p class="text-gray-700">You’re protected by a 30-day money-back guarantee. You lose nothing by trying — but you could gain everything.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="bg-purple-50 p-8 rounded-lg my-16 border border-purple-200 text-center">
+            <h2 class="text-2xl font-bold text-purple-800 mb-4">Don’t Be Like Arunesh From Mumbai</h2>
+            <p class="text-gray-700 text-lg italic">"I saw this course 3 months ago but didn’t take it. Thought I’d figure things out on my own. But 3 months later, I was still stuck in the same loop, same arguments, same loneliness. Meanwhile, a friend who joined Love Rx is now calm, clear, and finally attracting the right kind of love. I wish I had started when she did."</p>
+        </section>
+
+        <!-- Features -->
+        <section class="text-center my-16">
+            <h2 class="text-3xl font-bold text-blue-800 mb-2">Your Journey to Deep Love and Inner Peace Starts Now</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                <div class="text-center p-4 border rounded-lg shadow-sm">
+                    <h3 class="font-bold">Weekend Reset Plan</h3>
+                    <p class="text-sm text-gray-600">Our step-by-step system helps you shift your love patterns in just one weekend — perfect if you’re short on time.</p>
+                </div>
+                <div class="text-center p-4 border rounded-lg shadow-sm">
+                    <h3 class="font-bold">From Confusion to Clarity</h3>
+                    <p class="text-sm text-gray-600">Go from ghosting, overthinking, and chasing… to attracting real, emotionally available love — even if nothing has worked before.</p>
+                </div>
+                <div class="text-center p-4 border rounded-lg shadow-sm">
+                    <h3 class="font-bold">Just 30 Mins a Day</h3>
+                    <p class="text-sm text-gray-600">You only need a few minutes daily — no need to quit your job or pause your life.</p>
+                </div>
+                <div class="text-center p-4 border rounded-lg shadow-sm">
+                    <h3 class="font-bold">Built for Indian Realities</h3>
+                    <p class="text-sm text-gray-600">Created for Indian professionals dealing with family pressure, social conditioning, and emotional burnout.</p>
+                </div>
+                <div class="text-center p-4 border rounded-lg shadow-sm">
+                    <h3 class="font-bold">Tried. Tested. Transformational.</h3>
+                    <p class="text-sm text-gray-600">750+ students have already shifted their energy, confidence, and relationships using this exact framework.</p>
+                </div>
+                <div class="text-center p-4 border rounded-lg shadow-sm">
+                    <h3 class="font-bold">Lifetime Access</h3>
+                    <p class="text-sm text-gray-600">You’ll get lifetime access to all updates, new tools, and bonus resources — your personal growth never expires.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Comparison -->
+        <section class="my-16 flex justify-center items-center gap-8">
+            <div class="p-6 border-2 rounded-lg text-center">
+                <p class="text-gray-500">Normal Price</p>
+                <p class="text-4xl font-bold">₹199</p>
+            </div>
+            <span class="text-2xl font-bold text-gray-400">VS</span>
+            <div class="p-6 border-2 border-blue-500 rounded-lg text-center bg-blue-50">
+                <p class="text-blue-700">Today Only</p>
+                <p class="text-4xl font-bold text-blue-700">₹19</p>
+            </div>
+        </section>
+        <div class="text-center">
+            <a onclick="openUpgradePopup()" class="bg-red-500 text-white font-bold py-4 px-10 rounded-lg text-xl cta-button">
+                DOWNLOAD NOW FOR ₹19 (offer ends tonight!)
+            </a>
+        </div>
+
+        <!-- Dilemma Solved -->
+        <section class="bg-blue-50 p-8 rounded-lg my-16 border border-blue-200">
+            <h2 class="text-2xl font-bold text-center text-blue-800 mb-6">💖 The Indian Hign Functioning Dilemma – Solved.</h2>
+            <p class="text-center text-gray-600 mb-8">We were taught to succeed in school, land a good job, and build a stable life. But no one prepared us for the emotional cost:</p>
+            <ul class="space-y-4 text-lg mb-8">
+                <li class="flex items-start gap-3">💼 We excel in work but struggle in love</li>
+                <li class="flex items-start gap-3">😓 We handle deadlines, but feel drained in relationships</li>
+                <li class="flex items-start gap-3">🧠 We’re smart, but still fall into confusing patterns with people we care about</li>
+                <li class="flex items-start gap-3">💔 We settle — not because we want to, but because we don’t know how to break the cycle</li>
+            </ul>
+            <h3 class="text-xl font-bold text-center text-blue-800 mb-6">🌱 That’s Where Our Love System Comes In:</h3>
+            <p class="text-center text-gray-600 mb-8">This isn’t some fluffy self-help idea. It’s a proven reset system built for ambitious Indians who want peace, clarity, and real emotional connection — without turning their lives upside down.</p>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Uses your natural strengths — like awareness, ambition, and focus</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Fits your schedule — just 15-20 minutes a day</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Doesn’t require “healing mode” — just real tools that work</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Helps you stop chasing, start receiving — in love and life</div></li>
+            </ul>
+        </section>
 
         <!-- Author Section -->
-        <div class="bg-secondary/30 py-16 px-4">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid lg:grid-cols-2 gap-12 items-center">
-                    <!-- Left side - Author text -->
-                    <div class="space-y-4 text-foreground/80">
-                        <h2 class="text-3xl font-bold text-primary mb-6">Rakshita Kapoor</h2>
-                        <p class="text-lg">From Feeling Unloved… to Helping 750+ People Attract Real Love</p>
-                        
-                        <p>
-                            After years of giving too much and still feeling unloved, I found a way — one where love doesn&apos;t come from chasing, proving, or pretending.
-                        </p>
-                        <p>Now I&apos;m sharing that exact roadmap in this ebook — the same steps that helped 750+ people move from lonely, confused, and heartbroken… to finally feeling chosen, loved, and clear in their relationships..
-                        </p>
-
-                        <div class="mt-8 flex justify-around items-start text-center">
-                            <div class="flex flex-col items-center mx-2">
-                                <span class="text-green-500 text-3xl mb-1">💰</span>
-                                <p class="text-sm font-semibold text-foreground">₹4999 Worth of Coaching, Just ₹19 Today</p>
-                            </div>
-                            <div class="flex flex-col items-center mx-2">
-                                <span class="text-red-500 text-3xl mb-1">❤️</span>
-                                <p class="text-sm font-semibold text-foreground">264+ Clients currently in Love Reset</p>
-                            </div>
-                            <div class="flex flex-col items-center mx-2">
-                                <span class="text-purple-500 text-3xl mb-1">💪</span>
-                                <p class="text-sm font-semibold text-foreground">93% People Say They Feel Emotionally Stronger & Clearer in Just 5 Days</p>
-                            </div>
-                        </div>
+        <section class="bg-gray-50 p-8 rounded-lg my-16 flex flex-col md:flex-row items-center gap-8">
+            <img src="assets/author-photo.jpg" alt="Raakshita Kapoor" class="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg">
+            <div>
+                <h3 class="text-2xl font-bold text-blue-800">RAAKSHITA KAPOOR</h3>
+                <p class="text-gray-600 font-semibold mb-4">From Overachiever in Love… to Architect of the Raven & Wolf Theory™</p>
+                <p class="italic text-gray-700 mb-4">"I was the woman who had it all — except in love."</p>
+                <p class="text-gray-700">Hi, I’m Raakshitaa — the creator of the Raven & Wolf Theory™ and the Love Rx Method, a proven framework that’s helped 750+ Indian men and women reset their love patterns and build relationships that feel like home. Before this, I was just like you — high-performing, emotionally drained, and constantly second-guessing myself in love. I built teams in Indian corporates, worked in the Bay Area tech world, and scaled my own business from scratch. Yet the one place I felt stuck was in my relationships. I kept attracting men who admired my ambition but couldn’t meet my softness. Who praised my independence but couldn’t hold my truth. Who shrank when I shined. Until I met him — the kind of man who showed me I never had to choose between being powerful and being loved.</p>
+                <p class="text-gray-700 mt-4">💌 Fast forward to now: I’m a wife, a mother, and the woman who finally learned how to receive love — without overgiving, overthinking, or over-functioning. Now, I help ambitious Indians like you:
+                <ul class="list-disc list-inside">
+                    <li>Stop chasing love that feels like a job</li>
+                    <li>Break free from emotional loops and mixed signals</li>
+                    <li>Attract partners who meet you with depth, clarity, and presence</li>
+                </ul>
+                </p>
+                <div class="mt-6 flex gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                        <p class="text-2xl font-bold text-blue-600">750+</p>
+                        <p class="text-sm text-gray-500">Students Transformed</p>
                     </div>
-
-                    <!-- Right side - Author photo -->
-                    <div class="flex justify-center">
-                        <div class="relative">
-                            <img
-                                src="https://metageeks-technologies.github.io/ebook-html/assets/author-photo.jpg"
-                                alt="Rakshita Kapoor"
-                                class="w-80 h-96 object-cover rounded-lg shadow-xl"
-                            />
-                            <button
-                                class="bg-[#ffc225] hover:bg-[#d7a42c] text-black mt-12 px-8 py-4 text-xl font-bold rounded-lg shadow-lg"
-                                onclick="openUpgradePopup()"
-                            >
-                                Yes! I Want to Receive Love!<br />
-                                Get Access Now at just Rs 19!
-                            </button>
-                        </div>
-                        
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                        <p class="text-2xl font-bold text-blue-600">₹3 Cr+</p>
+                        <p class="text-sm text-gray-500">in Life-Aligned Relationships, Healing & Growth</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                        <p class="text-2xl font-bold text-blue-600">1000s</p>
+                        <p class="text-sm text-gray-500">of breakthroughs in boundaries, belief systems & love life reset</p>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- More Student Success Stories -->
+        <section class="text-center my-16">
+            <h2 class="text-3xl font-bold text-blue-800 mb-2">More Student Success Stories</h2>
+            <p>(3 testimonials from Google Drive)</p>
+        </section>
+
+        <div class="text-center">
+            <a onclick="openUpgradePopup()" class="bg-red-500 text-white font-bold py-4 px-10 rounded-lg text-xl cta-button">
+                DOWNLOAD NOW FOR ₹19 (offer ends tonight!)
+            </a>
         </div>
 
-        <!-- Testimonials Section -->
-        <div class="py-16 px-4">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center text-primary mb-12">
-                    Here Are Some Amazing Testimonials:
-                </h2>
+        <!-- Why now is the perfect time -->
+        <section class="bg-blue-50 p-8 rounded-lg my-16 border border-blue-200">
+            <h2 class="text-2xl font-bold text-center text-blue-800 mb-6">💖 Why Now is the Perfect Time to Start</h2>
+            <p class="text-center text-gray-600 mb-8">India is changing — fast. We’re more connected than ever… and yet most people still feel disconnected in their relationships and lost in love.</p>
+            
+            <p class="text-center text-gray-600 mb-8">You’ve probably noticed it too:</p>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Ghosting, games, and “almosts”</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Emotionally unavailable partners</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Burnout from trying to be “enough” for everyone</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Zero time to pause, reflect, and reset</div></li>
+            </ul>
+            <div class="text-center bg-yellow-200 p-8 rounded-lg border-dashed my-8">
+                <p class="text-blue-800 text-4xl"><strong>That’s why Love Rx exists — and why now is the best time to begin:</strong></p>
+            </div>
+            <ul class="space-y-4 text-lg">
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>No complicated therapy talk – Just clear, relatable tools</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>No huge time investment – Just 30 minutes a day</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Fits into your busy life – No need to quit your job or escape to the mountains</div></li>
+                <li class="flex items-start gap-3"><span class="text-blue-500 font-bold mt-1">✅</span><div>Shifts start fast – Most feel real change in 7 days or less</div></li>
+            </ul>
+            <div class="text-center bg-red-200 p-8 rounded-lg border-dashed my-8">
+                <p class="text-grey-800 text-xl"><strong>That’s why Love Rx exists — and why now is the best time to begin:</strong></p>
+            </div>
+        </section>
 
-                <!-- Testimonials Slider -->
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide bg-gray-100 p-8 rounded-lg text-center">
-                            <p class="text-lg text-gray-700">"This ebook changed my life! I finally understand how to attract the right partner."</p>
-                            <p class="text-sm text-gray-500 mt-2">- Happy Reader 1</p>
-                        </div>
-                        <div class="swiper-slide bg-gray-100 p-8 rounded-lg text-center">
-                            <p class="text-lg text-gray-700">"The Raven & Retriever Theory is a game-changer. Highly recommend!"</p>
-                            <p class="text-sm text-gray-500 mt-2">- Satisfied Customer 2</p>
-                        </div>
-                        <div class="swiper-slide bg-gray-100 p-8 rounded-lg text-center">
-                            <p class="text-lg text-gray-700">"I&apos;ve never felt more confident in my dating life. Thank you, Rakshita!"</p>
-                            <p class="text-sm text-gray-500 mt-2">- Grateful User 3</p>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Navigation -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </div>
-        <!-- Social Proof Masonry Grid -->
-        <div class="py-16 px-4">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold text-center text-primary mb-12">
-                    Real Student Results:<br>  Here&apos;s what people experienced after reading Lonely to Loved
-                </h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                                    <div class="relative overflow-hidden rounded-lg shadow-md group">
-                                        <a href="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-01.jpg" data-lightbox="social-proof">
-                                            <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-01.jpg" alt="Social Proof Image 1" class="w-full h-full object-cover border-2 border-gray-200 transition-transform duration-300 group-hover:scale-105 cursor-pointer">
-                                        </a>
-                                    </div>
-                                    <div class="relative overflow-hidden rounded-lg shadow-md group">
-                                        <a href="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-02.jpg" data-lightbox="social-proof">
-                                            <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-02.jpg" alt="Social Proof Image 2" class="w-full h-full object-cover border-2 border-gray-200 transition-transform duration-300 group-hover:scale-105 cursor-pointer">
-                                        </a>
-                                    </div>
-                                    <div class="relative overflow-hidden rounded-lg shadow-md group">
-                                        <a href="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-03.jpg" data-lightbox="social-proof">
-                                            <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-03.jpg" alt="Social Proof Image 3" class="w-full h-full object-cover border-2 border-gray-200 transition-transform duration-300 group-hover:scale-105 cursor-pointer">
-                                        </a>
-                                    </div>
-                                    <div class="relative overflow-hidden rounded-lg shadow-md group">
-                                        <a href="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-04.jpg" data-lightbox="social-proof">
-                                            <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-04.jpg" alt="Social Proof Image 4" class="w-full h-full object-cover border-2 border-gray-200 transition-transform duration-300 group-hover:scale-105 cursor-pointer">
-                                        </a>
-                                    </div>
-                                    <div class="relative overflow-hidden rounded-lg shadow-md group">
-                                        <a href="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-05.jpg" data-lightbox="social-proof">
-                                            <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-05.jpg" alt="Social Proof Image 5" class="w-full h-full object-cover border-2 border-gray-200 transition-transform duration-300 group-hover:scale-105 cursor-pointer">
-                                        </a>
-                                    </div>
-                                    <div class="relative overflow-hidden rounded-lg shadow-md group">
-                                        <a href="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-06.jpg" data-lightbox="social-proof">
-                                            <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-06.jpg" alt="Social Proof Image 6" class="w-full h-full object-cover border-2 border-gray-200 transition-transform duration-300 group-hover:scale-105 cursor-pointer">
-                                        </a>
-                                    </div>
-                                    <div class="relative overflow-hidden rounded-lg shadow-md group">
-                                        <a href="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-07.jpg" data-lightbox="social-proof">
-                                            <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/proof-07.jpg" alt="Social Proof Image 7" class="w-full h-full object-cover border-2 border-gray-200 transition-transform duration-300 group-hover:scale-105 cursor-pointer">
-                                        </a>
-                                    </div>                                    
-                                </div>
-            </div>
-        </div>
+        <!-- What happens if you do nothing -->
+        <section class="bg-red-50 border-2 border-red-200 p-8 rounded-lg my-16 text-center">
+            <h2 class="text-2xl font-bold text-red-800 mb-4">What Happens If You Do Nothing?</h2>
+            <p class="text-gray-700 text-lg">Imagine looking back 6 months from now — still stuck in the same patterns, the same confusion, the same silent heartbreak. While others who chose to reset are now in aligned relationships, feeling calm, clear, and deeply loved. Don’t let fear of change keep you repeating what’s already hurting you.</p>
+        </section>
 
         <!-- Final CTA -->
-        <div class="bg-[#ffc225] py-8 text-center">
-            <button
-                class="bg-[#0d90ef] hover:bg-primary/90 text-white px-12 py-4 text-2xl font-bold rounded-lg shadow-lg"
-                onclick="openUpgradePopup()"
-            >
-                💖 Your Love Reset Starts Today!
-            </button>
-            <p class="text-sm text-foreground/80 mt-4">
-                For less than the price of a coffee, you can unlock the step-by-step guide that’s helped 750+ people stop overgiving, heal from heartbreak, and attract real love.</p>
-                <p class="text-sm text-foreground/80 mt-4">If you&apos;ve ever felt stuck, ignored, or not good enough — this is your sign to choose you..</p>
-        </div>
+        <section class="bg-blue-100 p-8 rounded-lg my-16 text-center border-2 border-blue-300">
+            <h2 class="text-3xl font-bold text-blue-800 mb-4">Your Love Reset Starts Today</h2>
+            <p class="text-gray-600 mb-8">For less than the price of a pizza, you can get instant access to the exact blueprint that’s helped hundreds break toxic patterns and attract emotionally available love. This is your chance to stop settling and finally create the kind of relationship that feels safe, real, and lasting.</p>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-6 rounded-lg border-2 border-blue-200 text-center">
+                    <h3 class="text-3xl font-bold">Only <span class="text-red-500">₹19</span> Today! <s class="text-gray-500">₹199</s></h3>
+                    <p class="bg-red-500 text-white font-bold py-2 px-4 rounded-lg my-4 text-xl">90% OFF - Offer ends tonight!</p>
+                </div>
+                <div>
+                    <a onclick="openUpgradePopup()" class="w-full bg-red-500 text-white font-bold py-4 px-8 rounded-lg text-2xl flex items-center justify-center gap-2 cta-button mb-4">
+                        DOWNLOAD NOW FOR ₹19 (offer ends tonight!)
+                    </a>
+                    <p class="text-blue-600 font-semibold">✓ 30-Day Money-Back Guarantee - Zero Risk!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Still Hesitating -->
+        <section class="bg-purple-50 p-8 rounded-lg my-16 border border-purple-200 text-center">
+            <p class="text-gray-700 text-lg">Still Hesitating? Consider this: 89% of people will do nothing and remain stuck. Be in the elite 11% who take control of their financial future.</p>
+        </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-100 py-8 px-4">
-            <div class="max-w-4xl mx-auto text-center text-xs text-gray-600 space-y-2">
-                <p>Copyright &copy; 2025 Rakshita Kapoor | All rights reserved.</p>
-                <p class="leading-relaxed">
-                    This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a
-                    trademark of FACEBOOK™, Inc. Disclaimer: The website's content and the product for sale is based upon the author's opinion and is provided solely on an "AS IS" and "AS AVAILABLE" basis. You should do your own research and confirm the information with other sources when searching for information regarding health issues and always review the information carefully with your professional health care provider before using any of the protocols presented on this website and/or in the product sold here. Neither ClickBank nor the author are engaged in rendering medical or similar professional services or advice via this website or in the product, and the information provided is not intended to replace medical advice offered by a physician or other licensed healthcare provider. You should not construe ClickBank's sale of this product as an endorsement by ClickBank of the views expressed herein, or any warranty or guarantee of any strategy, recommendation, treatment, action, or application of advice made by the author of the product.
-                </p>
-            </div>
+        <footer class="text-center text-xs text-gray-500 my-12 space-y-4">
+            <p>Disclaimer: This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc. As stipulated by law, we can not and do not make any guarantees about your ability to get results or earn any money with my ideas, information, tools or strategies. I just want to help you by giving great content, direction and strategies that worked well for me and my students and that I believe can help you move forward. All of my terms, privacy policies and disclaimers for this program and website can be accessed via the links. I feel transparency is important and I hold ourselves (you & me) to a high standard of integrity. Thanks for stopping by. I hope this training and content brings you a lot of value & results.</p>
+            <p class="mt-4">Copyright © 2024 RakshitaKapoor. All rights reserved.</p>
         </footer>
-<!-- Popup1 -->
+    </div>
+    
+
+    <!-- Popups -->
 <!-- Popup1 -->
 <div id="popup1" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup1') closePopup1();">
     <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
@@ -344,7 +338,7 @@
                 &times;
             </button>
             <h3 class="text-3xl md:text-4xl font-bold text-center leading-tight py-4">
-                Special Upgrade: 7-Day Video<br />Course & Personal Call
+                Special Upgrade: <br />7-Day Video<br /><small>Course & Personal Call</small>
             </h3>
         </div>
 
@@ -379,7 +373,7 @@
             </div>
             <p class="text-center text-red-600 text-sm font-semibold">95% of spots claimed - Act Now!</p>
         <!-- New content from second screenshot -->
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4 relative">      
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4 relative">
 
             <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
                 SPECIAL UPGRADE
@@ -431,25 +425,25 @@
         </div>
         </div>
 <!-- New content from third screenshot -->
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto">
             <p id="discountMessageBottom" class="text-center text-green-600 text-lg mt-4 hidden">Discount Applied! You Save ₹4500</p>
             <p id="priceDisplayBottom" class="text-center text-red-600 font-bold text-4xl mb-4">₹4999</p>
-            <button id="applyDiscountBtn" class="bg-[#e0f2fe] border border-[#0d90ef] rounded-lg p-4 text-center mb-6 cursor-pointer w-full hover:bg-[#d0effd] transition-colors duration-200">
-                            <div class="flex items-center justify-center space-x-2">
-                                <input type="checkbox" id="discountCheckbox" class="form-checkbox h-6 w-6 text-[#0d90ef] rounded border-gray-400">
-                                <p class="text-[#0d90ef] font-semibold text-lg">Apply <span class="font-bold">90OFF</span> discount code (Today Only)</p>
-                            </div>
-                        </button>
+            <div class="flex items-center justify-center space-x-2 mb-6">
+                <input type="checkbox" id="discountCheckbox" class="form-checkbox h-6 w-6 text-[#0d90ef] rounded border-gray-400 cursor-pointer">
+                <button id="applyDiscountBtn" class="bg-[#e0f2fe] border border-[#0d90ef] rounded-lg p-4 text-center cursor-pointer w-full hover:bg-[#d0effd] transition-colors duration-200">
+                    <p class="text-[#0d90ef] font-semibold text-lg">Apply <span class="font-bold">90OFF</span> discount code (Today Only)</p>
+                </button>
+            </div>
             <button id="cta-course-main" class="w-full bg-red-600 text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2">
                 <span class="text-2xl">⚡</span>
-                <span id="priceDisplayButton">Get the Full System for ₹4999</span>
+                <span id="priceDisplayButton"> Get the Full System for ₹4999</span>
             </button>
             <p id="offer-timer" class="text-center text-red-600 text-sm font-semibold mt-2">Offer Expires in:</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4">
             <h3 class="text-2xl font-bold text-center mb-4">Just the eBook</h3>
             <div class="text-center text-lg font-semibold text-[#0d90ef] mb-2">
-                Weekend <strike>Dropshipping</strike> Blueprint
+                Weekend Love Reset Blueprint
             </div>
             <div class="text-center text-lg font-semibold text-[#0d90ef]">
                 <strike>(₹199 value)</strike>
@@ -475,16 +469,16 @@
             </ul>
             <p class="text-center text-gray-500 text-lg mt-4"><strike>₹199</strike></p>
             <p class="text-center text-red-600 font-bold text-5xl mb-4">₹19</p>
-            <button id="cta-ebook-19" class="w-full bg-gray-800 text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2">
+            <a href="https://superprofile.bio/vp/lonely-to-loved" id="cta-ebook-19" class="w-full bg-gray-800 text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2">
                 <span class="text-2xl">⬇️</span>
                 <span>Get eBook Only for ₹19</span>
-            </button>
+            </a>
         
 
 
         <div class="bg-red-100 border border-red-500 rounded-lg p-4 text-center mt-6">
             <p class="text-gray-800 text-lg font-semibold">Our students have created hundreds of real, meaningful relationships — no chasing, no confusion.</p>
-            <a \1="https://metageeks-technologies.github.io/ebook-html/\2" class="text-blue-600 underline text-sm">No, I’ll live the same life for the next 10 Years</a>
+            <a href="#" onclick="openPopup2()" class="text-blue-600 underline text-sm">No, I’ll live the same life for the next 10 Years</a>
         </div>
         <div class="bg-grey-100 border border-grey-500 rounded-lg p-4 text-center mt-6">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
@@ -631,7 +625,7 @@
 
         <!-- Middle Section with Quote -->
         <div class="p-6 bg-white relative z-10">
-            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">                
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
                 <p class="text-blue-800 font-semibold">
                     "Don't leave this page without taking action. The only thing standing between you and your love life, is this decision."
                 </p>
@@ -675,7 +669,7 @@
                     </svg>
                     <span>No, I'll pass on this opportunity</span>
                 </button>
-            </div> 
+            </div>
 
 
         </div>
@@ -688,8 +682,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://metageeks-technologies.github.io/ebook-html/js/main.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <!-- <script src="https://metageeks-technologies.github.io/ebook-html/js/main.js"></script> -->
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
