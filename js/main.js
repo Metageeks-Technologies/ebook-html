@@ -135,7 +135,24 @@ function openPopup3() {
 }
 
 function closePopup3() {
+    console.log('closePopup3 called: Hiding popup3 and attempting to open popup4');
     document.getElementById('popup3').classList.add('hidden');
+    openPopup4();
+}
+function proceedToPaymentAndClosePopup3() {
+    console.log('proceedToPaymentAndClosePopup3 called: Hiding popup3 and attempting to open popup4');
+    // window.location.href = 'https://rzp.io/rzp/uE3FN3I '; // Removed immediate redirection
+    document.getElementById('popup3').classList.add('hidden'); // Explicitly hide popup3
+    openPopup4(); // Directly open popup4
+}
+
+function openPopup4() {
+    console.log('openPopup4 called: Attempting to show popup4');
+    document.getElementById('popup4').classList.remove('hidden');
+}
+
+function closePopup4() {
+    document.getElementById('popup4').classList.add('hidden');
 }
 
 

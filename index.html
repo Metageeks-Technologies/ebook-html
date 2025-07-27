@@ -540,10 +540,10 @@
             This is your chance to change your love & life — for less than the cost of a dinner.
         </p>
 
-        <button class="w-full bg-[#0d90ef] text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 mb-4">
-            <span class="text-2xl">✅</span>
-            <span>Yes! I want the video course for ₹399</span>
-        </button>
+        <a href="https://rzp.io/rzp/eijqBTh" class="w-full bg-[#0d90ef] text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 mb-4">
+                    <span class="text-2xl">✅</span>
+                    <span>Yes! I want the video course for ₹399</span>
+                </a>
 
         <button id="noContinueButton" class="w-full bg-gray-200 text-gray-700 py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2">
             <span class="text-2xl">❌</span>
@@ -557,20 +557,138 @@
 <!-- Popup3 -->
 <div id="popup3" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup3') closePopup3();">
     <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
-        <h3 class="text-2xl font-bold mb-4">Popup 3: Final Upsell Offer</h3>
-        <p class="mb-6">This is the final popup. Don't miss out on this last chance!</p>
-        <button class="bg-[#ffc225] text-black px-6 py-2 rounded-lg hover:bg-[#d7a42c] mr-4">
-            Claim Final Offer!
+        <!-- Top Section -->
+        <div class="bg-[#8a2be2] text-white p-4 rounded-t-lg relative">
+            <h3 class="text-2xl font-bold text-center">Your Destiny is in Your Hands</h3>
+            <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup3()">
+                &times;
+            </button>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="bg-[#f8f0ff] p-6 rounded-lg shadow-inner mt-4">
+            <p class="text-center text-lg italic text-gray-800">
+                "The only limit to our realization of tomorrow is our doubts of today."
+            </p>
+            <p class="text-center text-lg font-semibold text-[#8a2be2] mt-2">
+                - Franklin D. Roosevelt
+            </p>
+        </div>
+
+        <!-- Belief Statement -->
+        <p class="text-center text-gray-700 text-base mt-6">
+            We believe in your power to build real, lasting love. This is your chance to take back control of your heart and your future.
+        </p>
+
+        <!-- Video Course Section -->
+        <div class="border-2 border-[#00c853] rounded-lg p-6 mt-6">
+            <h3 class="text-2xl font-bold text-center text-[#00c853] mb-4">
+                Decide Your Price for the Video Course
+            </h3>
+            <p class="text-center text-gray-700 text-base mb-6">
+                We want everyone to have access to this 7-Day Love Reset Video Course.
+                Pay what feels fair for this Love & Life-changing journey
+            </p>
+            <p class="text-center text-lg font-bold text-[#0d90ef] mt-4">
+                Recent Student Result
+            </p>
+            <p class="text-center text-gray-600 text-sm">
+                3 Months After Starting
+            </p>
+            <p class="text-center text-gray-600 text-sm">
+                (I’ll Share image for this)
+            </p>
+        </div>
+        <div class="bg-[#e6ffe6] border border-green-500 rounded-lg p-6 mt-6 text-center">
+            <h3 class="text-xl font-bold text-green-700 mb-2">Our Students Created</h3>
+            <p class="text-5xl font-bold text-green-700 mb-2">1000+</p>
+            <p class="text-lg text-gray-700">of Real Relationships by using the exact tools you’re about to learn.
+                This is your chance to create the future you deserve.</p>
+        </div>
+        <button class="w-full bg-[#0d90ef] text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 mt-6" onclick="proceedToPaymentAndClosePopup3()">
+                    <span class="text-2xl">👇</span>
+                    <span>Yes, I want to decide the price</span>
+                </button>
+        <button class="w-full bg-gray-200 text-gray-700 py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 mt-4" onclick="closePopup3()">
+            <span class="text-2xl">❌</span>
+            <span>No, I’ll pass on this opportunity</span>
         </button>
-        <button class="bg-gray-300 text-gray-800 px-6 py-2 rounded-lg hover:bg-gray-400" onclick="closePopup3()">
-            No, thanks
-        </button>
+        
     </div>
 </div>
+<!-- Popup4 -->
+<div id="popup4" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup4') closePopup4();">
+    <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
+        <!-- Top Section -->
+        <div class="bg-[#0d90ef] text-white p-6 rounded-t-lg relative">
+            <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup4()">
+                &times;
+            </button>
+            <h3 class="text-3xl md:text-4xl font-bold text-center leading-tight py-4">
+                You Came So Far Because You<br />Want to Change Your Life
+            </h3>
+        </div>
+
+        <!-- Middle Section with Quote -->
+        <div class="p-6 bg-white relative z-10">
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">                
+                <p class="text-blue-800 font-semibold">
+                    "Don't leave this page without taking action. The only thing standing between you and your love life, is this decision."
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <p class="text-center text-gray-700 text-lg mb-4">
+                    We understand hesitation, but we don't want you to regret missing this opportunity. You can still get started with the essential knowledge.
+                </p>
+                <!-- Image will be shared later -->
+                <p class="text-center text-gray-800 font-bold text-xl mb-4">
+                    Recent Student Result
+                </p>
+                <p class="text-center text-gray-600 text-sm mb-6">
+                    After implementing the blueprint
+                </p>
+                <img src="assets/social-proof/popup2-review.png" alt="Recent Student Breakthrough" class="py-4 mx-auto mb-4 rounded-lg shadow-lg">
+                
+            </div>
+
+<!-- Screenshot content-->
+     <div class="bg-white rounded-lg shadow-lg p-6 mt-4 text-center border border-dashed border-purple-500">
+                <h3 class="text-2xl md:text-3xl font-bold text-purple-700 mb-4">
+                    Get the eBook for Only ₹19
+                </h3>
+                <p class="text-base text-gray-700 mb-4">
+                    Start your journey to financial freedom with the core blueprint that has helped hundreds succeed.
+                </p>
+                <p class="text-base text-gray-700 mb-6">
+                    This is your final chance to take action today.
+                </p>
+                <a href="https://superprofile.bio/vp/lonely-to-loved" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H5a2 2 0 01-2-2v-7a2 2 0 012-2h14a2 2 0 012 2v7a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>Yes, I want the eBook for ₹19</span>
+                </a>
+                <button class="w-full bg-gray-200 hover:bg-gray-300 text-gray-700 py-3 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2" onclick="closePopup4()">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2A9 9 0 1112 1a9 9 0 017 7z" />
+                    </svg>
+                    <span>No, I'll pass on this opportunity</span>
+                </button>
+            </div> 
+
+
+        </div>
+
+    
+
+    </div>
+</div>
+            
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://metageeks-technologies.github.io/ebook-html/js/main.js"></script>
+    <script src="js/main.js"></script>
     <script \1="https://metageeks-technologies.github.io/ebook-html/\2"></script>
 </body>
 </html>
