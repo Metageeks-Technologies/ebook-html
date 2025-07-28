@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        .font-nunito {
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        .font-open-sans {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:"wdth" 100;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #8A2BE2, #4F46E5, #FF8C00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pulse-button {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .cta-button {
+            transition: transform 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+    <style>
+        .swiper {
+            width: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            max-height: 300px; /* Adjust as needed */
+            object-fit: contain; /* Changed to contain to prevent cropping */
+        }
+        .swiper-button-next, .swiper-button-prev {
+            color: #4F46E5; /* Tailwind indigo-600 */
+        }
+        .swiper-pagination-bullet-active {
+            background: #4F46E5; /* Tailwind indigo-600 */
+        }
+        .swiper-pagination {
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-4">
+        <!-- Thank You Section -->
+        <section class="text-center my-12">
+            <div class="mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-blue-600 mx-auto p-4 bg-blue-100 rounded-full">
+                    <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold font-nunito mb-4 text-blue-600">
+                💖 Thank You for Your Purchase!
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 font-semibold py-4">
+                Your 7-Day Love Reset journey starts now. You’re just moments away from clarity, confidence, and emotionally available love.
+            </p>
+        </section>
+    </div>
+
+    <!-- Access Course Section -->
+    <section class="bg-blue-50 p-8 rounded-lg border-2 border-blue-200 max-w-2xl mx-auto my-12">
+        <h2 class="text-xl font-bold text-blue-700 mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 inline-block align-middle mr-2">
+                <path d="M12 1.5a.75.75 0 0 1 .75.75V4.5a.75.75 0 0 1-1.5 0V2.25A.75.75 0 0 1 12 1.5ZM12 13.5a.75.75 0 0 1 .75.75V16.5a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75ZM12 7.5a.75.75 0 0 1 .75.75V10.5a.75.75 0 0 1-1.5 0V8.25a.75.75 0 0 1 .75-.75ZM6 13.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0v-2.25a.75.75 0 0 0-.75-.75ZM6 7.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0V8.25a.75.75 0 0 0-.75-.75ZM18 13.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0v-2.25a.75.75 0 0 0-.75-.75ZM18 7.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0V8.25a.75.75 0 0 0-.75-.75ZM12 19.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75ZM3.75 8.25a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0V9a.75.75 0 0 0-.75-.75ZM3.75 14.25a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0v-.75a.75.75 0 0 0-.75-.75ZM19.5 9a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 .75-.75ZM19.5 15a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 .75-.75ZM4.5 2.25a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0V3a.75.75 0 0 0-.75-.75ZM18.75 3a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0V3.75a.75.75 0 0 0-.75-.75ZM4.5 18.75a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0v-.75a.75.75 0 0 0-.75-.75ZM18.75 19.5a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 .75-.75Z" />
+            </svg>
+            💫 Access Your Course Here
+        </h2>
+        <ul class="space-y-2 text-gray-700 mb-6">
+            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Click the button below to go to the course signup page</li>
+            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Create your account using the same email you used to purchase</li>
+            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Once your account is ready, click “Join this course”</li>
+            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> Begin your journey to real, healthy, magnetic love</li>
+        </ul>
+        <a href="#" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-xl flex items-center justify-center gap-2 cta-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path d="M12 1.5a.75.75 0 0 1 .75.75V4.5a.75.75 0 0 1-1.5 0V2.25A.75.75 0 0 1 12 1.5ZM12 13.5a.75.75 0 0 1 .75.75V16.5a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75ZM12 7.5a.75.75 0 0 1 .75.75V10.5a.75.75 0 0 1-1.5 0V8.25a.75.75 0 0 1 .75-.75ZM6 13.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0v-2.25a.75.75 0 0 0-.75-.75ZM6 7.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0V8.25a.75.75 0 0 0-.75-.75ZM18 13.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0v-2.25a.75.75 0 0 0-.75-.75ZM18 7.25a.75.75 0 0 0-.75.75v2.25a.75.75 0 0 0 1.5 0V8.25a.75.75 0 0 0-.75-.75ZM12 19.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75ZM3.75 8.25a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0V9a.75.75 0 0 0-.75-.75ZM3.75 14.25a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0v-.75a.75.75 0 0 0-.75-.75ZM19.5 9a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 .75-.75ZM19.5 15a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 .75-.75ZM4.5 2.25a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0V3a.75.75 0 0 0-.75-.75ZM18.75 3a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0V3.75a.75.75 0 0 0-.75-.75ZM4.5 18.75a.75.75 0 0 0-.75.75v.75a.75.75 0 0 0 1.5 0v-.75a.75.75 0 0 0-.75-.75ZM18.75 19.5a.75.75 0 0 0-.75-.75h-.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 .75-.75Z" />
+            </svg>
+            Access Course Now
+        </a>
+        <div class="bg-white rounded-lg shadow-lg max-w-sm mx-auto mt-8">
+            <img src="https://metageeks-technologies.github.io/ebook-html/assets/book-cover.jpg" alt="Course Image" class="w-full h-auto rounded-t-lg">
+            <div class="p-4">
+                <button class="w-full bg-purple-600 text-white py-2 rounded-lg font-bold mb-4">Join This Course</button>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <div class="font-semibold">Responsible</div>
+                    <div>RAAKSHITA KAPOOR</div>
+                    <div class="font-semibold">Last Update</div>
+                    <div>19/07/2025</div>
+                    <div class="font-semibold">Completion Time</div>
+                    <div>2 hours 22 minutes</div>
+                    <div class="font-semibold">Members</div>
+                    <div>3</div>
+                </div>
+                <button class="w-full bg-gray-100 text-gray-700 py-2 rounded-lg mt-4 flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061ZM13.5 7.5a.75.75 0 0 0 0 1.5h.008a.75.75 0 0 0 0-1.5H13.5Z" clip-rule="evenodd" />
+                    </svg>
+                    Share
+                </button>
+            </div>
+        </div>
+        <p class="text-center text-gray-600 text-sm mt-4">Your course dashboard after signup</p>
+    </section>
+
+    <!-- Bonus Call Section -->
+    <section class="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto my-12 border-2 border-gray-200">
+        <h2 class="text-xl font-bold text-blue-700 mb-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 inline-block align-middle mr-2">
+                <path fill-rule="evenodd" d="M1.5 8.67v3.09a8.79 8.79 0 0 0 1.833 5.432 6.02 6.02 0 0 1 2.491 2.653c.18.386.314.794.397 1.216.047.243.096.487.146.734.017.086.034.172.051.257.007.034.013.068.02.102a.75.75 0 0 0 .91.543c.879-.239 1.719-.491 2.416-.717V21a.75.75 0 0 1 .75.75c0 .414.336.75.75.75h3a.75.75 0 0 1 .75-.75.75.75 0 0 1 .75-.75v-.007c.697.226 1.537.478 2.416.717a.75.75 0 0 0 .91-.543c.007-.034.013-.068.02-.102.017-.085.034-.171.051-.257.083-.422.217-.83.397-1.216a6.02 6.02 0 0 1 2.491-2.653 8.79 8.79 0 0 0 1.833-5.432V8.67a8.79 8.79 0 0 0-1.833-5.432A6.02 6.02 0 0 1 18.167.585c-.18-.386-.314-.794-.397-1.216a.75.75 0 0 0-.91-.543c-.879.239-1.719.491-2.416.717V3a.75.75 0 0 1-.75.75.75.75 0 0 1-.75-.75V.007c-.697-.226-1.537-.478-2.416-.717a.75.75 0 0 0-.91.543c-.007.034-.013.068-.02.102-.017.085-.034.171-.051.257-.083.422-.217.83-.397 1.216a6.02 6.02 0 0 1-2.491 2.653A8.79 8.79 0 0 0 1.5 8.67Z" clip-rule="evenodd" />
+            </svg>
+            Bonus Call With Our Expert
+        </h2>
+        <p class="text-center text-gray-600 mb-6">
+            After completing the 7-day course steps, you can book a bonus love strategy call with our dating & relationship expert.
+        </p>
+        <div class="flex flex-col md:flex-row items-center gap-6 bg-blue-50 p-6 rounded-lg border border-blue-200">
+            <img src="https://metageeks-technologies.github.io/ebook-html/assets/author-photo.jpg" alt="Raakshita Kapoor" class="w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg">
+            <div>
+                <h3 class="text-xl font-bold text-blue-800">Raakshitaa Kapoor</h3>
+                <p class="text-gray-600 font-semibold mb-2">💖 From Corporate Leader to Love Reset Coach</p>
+                <p class="text-gray-700 mb-4">"After years of excelling in the corporate world but feeling stuck in love, I finally cracked the code to emotional clarity, healthy connection, and lasting love."</p>
+                <p class="text-gray-700 mb-4">Now, I help ambitious Indian professionals break toxic patterns, stop chasing emotionally unavailable partners, and finally attract love that feels safe, real, and deeply fulfilling.</p>
+                <div class="flex gap-4">
+                    <div class="bg-blue-100 p-3 rounded-lg text-center">
+                        <p class="text-lg font-bold text-blue-600">750+</p>
+                        <p class="text-xs text-gray-500">Success Stories</p>
+                    </div>
+                    <div class="bg-blue-100 p-3 rounded-lg text-center">
+                        <p class="text-lg font-bold text-blue-600">264+</p>
+                        <p class="text-xs text-gray-500">Clients currently in Love Reset</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="text-center my-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Need help with access or have questions?</h2>
+        <a href="https://chat.whatsapp.com/EuNVHRkaezm6QR91irt3jl?mode=ac_t" class="inline-flex items-center bg-green-500 text-white font-bold py-3 px-6 rounded-lg text-xl cta-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
+                <path d="M19.52 2.93c-2.34-1.1-4.9-1.67-7.52-1.67-6.6 0-12 5.4-12 12 0 2.2.6 4.3 1.67 6.1l-1.1 4.05 4.1-1.08c1.7.9 3.6 1.4 5.6 1.4 6.6 0 12-5.4 12-12 0-2.62-.57-5.18-1.67-7.52zm-7.52 19.07c-1.8 0-3.5-.5-5-1.3l-3.5 1 1-3.5c-.8-1.5-1.3-3.2-1.3-5 0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10zm4.5-6.5c-.2-.1-.7-.3-.8-.3-.2-.1-.4-.1-.6.1-.2.2-.8.9-.9 1.1-.1.2-.3.2-.5.1-.2-.1-.9-.3-1.7-1.1-.7-.7-1.2-1.5-1.4-1.7-.2-.2 0-.3.1-.4.1-.1.2-.2.3-.4.1-.2.1-.3 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4-.2 0-.4 0-.6.1-.2.1-.8.9-.8.9-.2.2-.2.5-.2.7 0 .2.1.4.2.5.1.1.3.3.5.5.2.2.4.3.6.4.2.1.4.1.6.1.2 0 .7-.2.8-.2.1-.1.4-.4.5-.6.1-.2.1-.4.1-.6 0-.2-.1-.4-.2-.5z"/>
+            </svg>
+            Get Help on WhatsApp
+        </a>
+    </section>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed bottom-4 left-4 z-50 space-y-2"></div>
+
+    <!-- Popups (if any are needed for thankyou page) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Any specific JS for thankyou.html can go here
+    </script>
+</body>
+</html>
