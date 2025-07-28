@@ -6,10 +6,24 @@
     <title>Go from Lonely to Loved</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .font-nunito {
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;            
+            font-style: normal;
+        }
+        .font-open-sans {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;  
+            font-style: normal;
+            font-variation-settings:"wdth" 100;
         }
         .gradient-text {
             background: linear-gradient(to right, #8A2BE2, #4F46E5, #FF8C00);
@@ -38,10 +52,10 @@
     <div class="max-w-4xl mx-auto p-4">
         <!-- Header Section -->
         <header class="text-center my-12">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-                Done with heartbreak and chasing? Go from Lonely to Loved This Weekend!
+            <h1 class="text-4xl md:text-5xl font-extrabold font-nunito mb-4" style="line-height: 1.5;">
+                Done with heartbreak and chasing? Go from <span class="bg-gray-200 font-bold px-2 py-1 rounded text-blue-600"><span class="italic font-nunito font-extrabold text-red-500">Lonely to Loved</span> <span class="text-red-500">❤️</span></span> This Weekend!
             </h1>
-            <p class="text-lg md:text-xl text-gray-600 font-semibold">
+            <p class="text-lg md:text-xl text-gray-600 font-semibold py-4">
                 Start attracting emotionally available partners <span class="bg-yellow-300 italic px-2 py-1 rounded">in just 7 days!</span>
             </p>
              <div class="bg-green-500 rounded-lg p-4 mt-4">
@@ -70,7 +84,7 @@
             <div class="bg-blue-50 p-6 rounded-lg border-2 border-blue-200 text-center">
                 <h3 class="text-3xl font-bold">Only <span class="text-red-500">₹19</span> Today! <s class="text-gray-500">₹199</s></h3>
                 <p class="bg-amber-500 text-white font-bold py-2 px-4 rounded-lg my-4 text-xl">90% OFF - Limited Time!</p>
-                <p class="text-sm text-gray-600 mb-4">Offer ends tonight!</p>
+                <!-- <p class="text-sm text-gray-600 mb-4">Offer ends tonight!</p> -->
                 <!-- Discount Section -->
                 <!-- <div class="mb-4">
                     <label for="discountCheckbox" class="flex items-center justify-center space-x-2 cursor-pointer">
@@ -82,9 +96,8 @@
                     </button>
                     <p id="discountMessageBottom" class="text-green-600 font-semibold mt-2 hidden">Discount Applied!</p>
                 </div> -->
-                <a onclick="openUpgradePopup()" class="w-full bg-red-500 text-white font-bold py-4 px-8 rounded-lg text-2xl flex items-center justify-center gap-2 cta-button">
-                                    DOWNLOAD NOW FOR ₹19 (offer ends tonight!)
-                                </a>
+                <a onclick="openUpgradePopup()" class="w-full bg-red-500 text-white font-bold py-4 px-8 rounded-lg text-2xl flex items-center justify-center gap-2 cta-button">DOWNLOAD NOW FOR ₹19</a>
+                <p class="text-sm text-gray-600 mb-4 pt-4">Offer ends tonight!</p>
             </div>
         </section>
         

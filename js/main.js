@@ -164,7 +164,7 @@ function openPopup4() {
 
 function closePopup4() {
     document.getElementById('popup4').classList.add('hidden');
-    window.location.href = 'index.html'; // Redirect to index page
+    window.location.href = '/book'; // Redirect to index page
 }
 
 
