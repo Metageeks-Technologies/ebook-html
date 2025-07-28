@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize Swiper for testimonials
-    new Swiper('.mySwiper', {
-        slidesPerView: 1,
+    const swiper = new Swiper('.mySwiper', {
+        slidesPerView: 2,
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+            },
+        },
         spaceBetween: 30,
         loop: true,
         pagination: {
@@ -11,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
         },
     });
 
@@ -121,6 +130,103 @@ document.addEventListener('DOMContentLoaded', function() {
             closePopup2(); // This will trigger the next popup in sequence
         });
     }
+
+    // --- Toast Notification Logic ---
+    const toastContainer = document.getElementById('toast-container');
+    const purchasesData = [
+      {
+        "name": "Vikram",
+        "city": "Surat"
+      },
+      {
+        "name": "Sneha",
+        "city": "Ahmedabad"
+      },
+      {
+        "name": "Priya",
+        "city": "Mumbai"
+      },
+      {
+        "name": "Rahul",
+        "city": "Delhi"
+      },
+      {
+        "name": "Anjali",
+        "city": "Bengaluru"
+      },
+      {
+        "name": "Amit",
+        "city": "Chennai"
+      },
+      {
+        "name": "Deepa",
+        "city": "Kolkata"
+      },
+      {
+        "name": "Sanjay",
+        "city": "Hyderabad"
+      },
+      {
+        "name": "Pooja",
+        "city": "Pune"
+      },
+      {
+        "name": "Arjun",
+        "city": "Jaipur"
+      }
+    ];
+
+    // Get a random purchase
+    function getRandomPurchase() {
+        if (purchasesData.length === 0) return null;
+        const randomIndex = Math.floor(Math.random() * purchasesData.length);
+        return purchasesData[randomIndex];
+    }
+
+    // Create and display a toast
+    function showToast() {
+        const purchase = getRandomPurchase();
+        if (!purchase) {
+            console.warn('No purchase data available to show toast.');
+            return;
+        }
+
+        const toast = document.createElement('div');
+        toast.className = 'bg-green-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-all duration-500 ease-out opacity-0 translate-x-full';
+        toast.innerHTML = `
+            <div>
+                <p class="font-semibold">${purchase.name} from ${purchase.city}</p>
+                <p class="text-sm text-gray-200">just purchased!</p>
+            </div>
+        `;
+        
+        toastContainer.appendChild(toast);
+
+        // Trigger fade-in animation
+        setTimeout(() => {
+            toast.classList.remove('opacity-0', 'translate-x-full');
+            toast.classList.add('opacity-100', 'translate-x-0');
+        }, 100); // Small delay to ensure transition applies
+
+        // Auto-close after 5 seconds
+        setTimeout(() => {
+            toast.classList.remove('opacity-100', 'translate-x-0');
+            toast.classList.add('opacity-0', 'translate-x-full');
+            toast.addEventListener('transitionend', () => toast.remove(), { once: true });
+        }, 5000);
+    }
+
+    // Start toast interval with variable timing
+    function startToastInterval() {
+        setInterval(() => {
+            const delay = Math.random() * (5000 - 1000) + 1000; // Random delay between 1 and 3 seconds
+            setTimeout(showToast, delay);
+        }, 5000); // Check every 3 seconds if a new toast should appear
+    }
+
+    // Start toast interval directly as data is embedded
+    startToastInterval();
+
 });
 
 function openUpgradePopup() {

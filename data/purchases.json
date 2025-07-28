@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Vikram",
+    "city": "Surat"
+  },
+  {
+    "name": "Sneha",
+    "city": "Ahmedabad"
+  },
+  {
+    "name": "Priya",
+    "city": "Mumbai"
+  },
+  {
+    "name": "Rahul",
+    "city": "Delhi"
+  },
+  {
+    "name": "Anjali",
+    "city": "Bengaluru"
+  },
+  {
+    "name": "Amit",
+    "city": "Chennai"
+  },
+  {
+    "name": "Deepa",
+    "city": "Kolkata"
+  },
+  {
+    "name": "Sanjay",
+    "city": "Hyderabad"
+  },
+  {
+    "name": "Pooja",
+    "city": "Pune"
+  },
+  {
+    "name": "Arjun",
+    "city": "Jaipur"
+  }
+]
