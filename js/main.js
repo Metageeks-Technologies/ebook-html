@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
         toast.innerHTML = `
             <div>
                 <p class="font-semibold">${purchase.name} from ${purchase.city}</p>
-                <p class="text-sm text-gray-200">just purchased!</p>
+                <p class="text-sm text-dark">just purchased!</p>
             </div>
         `;
         
