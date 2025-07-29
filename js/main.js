@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const toast = document.createElement('div');
-        toast.className = 'bg-purple-50 text-white p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-all duration-500 ease-out opacity-0 translate-x-full';
+        toast.className = 'bg-blue-50 text-dark p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-all duration-500 ease-out opacity-0 translate-x-full';
         toast.innerHTML = `
             <div>
                 <p class="font-semibold">${purchase.name} from ${purchase.city}</p>
