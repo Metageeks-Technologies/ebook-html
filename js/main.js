@@ -213,15 +213,15 @@ document.addEventListener('DOMContentLoaded', function() {
             toast.classList.remove('opacity-100', 'translate-x-0');
             toast.classList.add('opacity-0', 'translate-x-full');
             toast.addEventListener('transitionend', () => toast.remove(), { once: true });
-        }, 5000);
+        }, 3000);
     }
 
     // Start toast interval with variable timing
     function startToastInterval() {
         setInterval(() => {
-            const delay = Math.random() * (5000 - 1000) + 1000; // Random delay between 1 and 3 seconds
+            const delay = Math.random() * (9000 - 1000) + 1000; // Random delay between 1 and 3 seconds
             setTimeout(showToast, delay);
-        }, 5000); // Check every 3 seconds if a new toast should appear
+        }, 9000); // Check every 3 seconds if a new toast should appear
     }
 
     // Start toast interval directly as data is embedded
