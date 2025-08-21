@@ -8,11 +8,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         .font-anton {
             font-family: "Anton", sans-serif;
@@ -25,10 +25,21 @@
             font-style: normal;
             font-variation-settings:"wdth" 100;
         }
+        .heading-poppins {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5rem; /* Mobile default */
+            font-weight: 900;
+        }
+        @media (min-width: 768px) {
+            .heading-poppins {
+                font-size: 2rem; /* Desktop */
+            }
+        }
         .gradient-text {
-            background: linear-gradient(to right, #8A2BE2, #4F46E5, #FF8C00);
+            background: linear-gradient(45deg, #DC3545, #007BFF, #FF9800);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
         }
         .pulse-button {
             animation: pulse 2s infinite;
@@ -72,6 +83,11 @@
             position: relative;
             margin-top: 20px;
         }
+        .popup-heading {
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -79,37 +95,25 @@
     <div class="max-w-4xl mx-auto p-4">
         <!-- Header Section -->
         <header class="text-center my-12">
-            <h2 class="text-2xl md:text-4xl font-anton mb-4" style="line-height: 1.5; letter-spacing: 2px;">
-                Done with heartbreak and chasing? Go from
+            <h2 class="heading-poppins font-anton mb-4 gradient-text" style="line-height: 1.5; letter-spacing: 2px;">
+                            Done with heartbreak and chasing? Go from Lonely to Loved <span class="text-red-500">❤️</span>
             </h2>
-            <h1 class="text-4xl md:text-6xl font-anton mb-4" style="line-height: 1.5; letter-spacing: 2px;">
-                 <span class="bg-gray-200 font-bold px-2 py-1 rounded text-blue-600"><span class="font-anton text-red-500">Lonely to Loved</span> <span class="text-red-500">❤️</span></span>
-            </h1>
-            <h2 class="text-2xl md:text-4xl font-anton mb-4" style="line-height: 1.5; letter-spacing: 2px;">
+            <!-- <h2 class="text-2xl md:text-4xl font-anton mb-4" style="line-height: 1.5; letter-spacing: 2px;">
                 This Weekend!
-            </h2>
-            <p class="text-lg md:text-xl text-gray-600 font-semibold py-4">
+            </h2> -->
+            <h2 class="text-gray-600 py-4" style="font-size: 1.2rem; font-weight: 500;">
                 Start attracting emotionally available partners <span class="bg-yellow-300 italic px-2 py-1 rounded">in just 7 days!</span>
+            </h2>
+            <p class="bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-full inline-block mb-4">
+                42 people purchased in the last 24 hours
             </p>
-             <div class="bg-green-500 rounded-lg p-4 mt-4">
-                 <p class="text-lg md:text-xl text-white font-bold">
-                     The Proven System That's Helped 752+ Indian Men & Women find connection and commitment. Without loosing self respect.
+            
+                 <p class="text-lg md:text-xl text-gray-600 font-bold pt-4">
+                     The Proven System That's Helped <span class="bg-yellow-300 italic px-2 py-1 rounded text-black">750+ Indian Men & Women</span> find connection and commitment. Without losing self-respect.
                  </p>
-             </div>
         </header>
 
-        <!-- Patterns Section -->
-        <section class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-12">
-            <h2 class="text-xl font-bold text-red-700 mb-4">Are These Patterns Keeping You Stuck in Love?</h2>
-            <ul class="space-y-2 text-gray-700">
-                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Attracting the same emotionally unavailable people</li>
-                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Confusing attention with real connection</li>
-                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Overgiving to prove your worth</li>
-                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Saying “I’m fine” when you’re secretly lonely</li>
-            </ul>
-        </section>
-
-        <!-- Main Offer Section -->
+         <!-- Main Offer Section -->
         <section id="main-cta" class="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div class="bg-blue-50 p-4 rounded-lg border-2 border-blue-200 flex justify-center">
                 <img src="https://metageeks-technologies.github.io/ebook-html/assets/ebook3d-.jpg" alt="EBOOK Photo" class="w-full max-w-sm">
@@ -133,6 +137,19 @@
                 <p class="text-sm text-gray-600 mb-4 pt-4">Offer ends tonight!</p>
             </div>
         </section>
+
+        <!-- Patterns Section -->
+        <section class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg mb-12">
+            <h2 class="text-xl font-bold text-red-700 mb-4">Are These Patterns Keeping You Stuck in Love?</h2>
+            <ul class="space-y-2 text-gray-700">
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Attracting the same emotionally unavailable people</li>
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Confusing attention with real connection</li>
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Overgiving to prove your worth</li>
+                <li class="flex items-center gap-2"><span class="text-red-500">✗</span> Saying “I’m fine” when you’re secretly lonely</li>
+            </ul>
+        </section>
+
+       
         
         <!-- Offer Timer -->
         <div id="offer-timer" class="text-center text-red-600 font-bold text-xl mb-8">
@@ -141,9 +158,7 @@
 
         <!-- Social Proof -->
         <div class="text-center mb-8">
-            <p class="bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-full inline-block mb-4">
-                42 people purchased in the last 24 hours
-            </p>
+            
             <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-600 mb-12">
                 <span class="bg-gray-100 py-1 px-3 rounded-full">✓ 750+ Success Stories</span>
                 <span class="bg-gray-100 py-1 px-3 rounded-full">✓ Money-Back Guarantee</span>
@@ -413,12 +428,12 @@
 <div id="popup1" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup1') closePopup1();">
     <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
         <!-- Top Blue Section -->
-        <div class="bg-[#0d90ef] text-white p-6 rounded-t-lg relative">
+        <div class="bg-[#007BFF] text-white p-6 rounded-t-lg relative">
             <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup1()">
                 &times;
             </button>
-            <h3 class="text-3xl md:text-4xl font-bold text-center leading-tight py-4">
-                Special Upgrade: <br />7-Day Video<br /><small>Course & Personal Call</small>
+            <h3 class="popup-heading text-center leading-tight py-4">
+                Special Upgrade: 7-Day Video<br /><small>Course & Personal Call</small>
             </h3>
         </div>
 
@@ -571,11 +586,11 @@
 <div id="popup2" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup2') closePopup2();">
     <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
         <!-- Top Red Section -->
-        <div class="bg-red-600 text-white p-6 rounded-t-lg relative">
+        <div class="bg-[#007BFF] text-white p-6 rounded-t-lg relative">
             <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup2()">
                 &times;
             </button>
-            <h3 class="text-3xl md:text-4xl font-bold text-center leading-tight py-4">
+            <h3 class="popup-heading text-center leading-tight py-4">
                 Wait! Your Special Discount is Still Available
             </h3>
         </div>
@@ -631,17 +646,19 @@
 
 <!-- Popup3 -->
 <div id="popup3" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup3') closePopup3();">
-    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
+    <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
         <!-- Top Section -->
-        <div class="bg-[#8a2be2] text-white p-4 rounded-t-lg relative">
-            <h3 class="text-2xl font-bold text-center">Your Destiny is in Your Hands</h3>
+        <div class="bg-[#007BFF] text-white p-6 rounded-t-lg relative">
             <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup3()">
                 &times;
             </button>
+            <h3 class="popup-heading text-center leading-tight py-4">
+                Your Destiny is in Your Hands
+            </h3>
         </div>
 
         <!-- Quote Section -->
-        <div class="bg-[#f8f0ff] p-6 rounded-lg shadow-inner mt-4">
+        <div class="bg-[#f8f0ff] p-6 rounded-lg shadow-inner m-6">
             <p class="text-center text-lg italic text-gray-800">
                 "The only limit to our realization of tomorrow is our doubts of today."
             </p>
@@ -651,12 +668,12 @@
         </div>
 
         <!-- Belief Statement -->
-        <p class="text-center text-gray-700 text-base mt-6">
+        <p class="text-center text-gray-700 text-base m-6">
             We believe in your power to build real, lasting love. This is your chance to take back control of your heart and your future.
         </p>
 
         <!-- Video Course Section -->
-        <div class="border-2 border-[#00c853] rounded-lg p-6 mt-6" onclick="window.location.href='https://pages.razorpay.com/pl_Qt1wcHSC3luGyq/view'" style="cursor: pointer;">
+        <div class="border-2 border-[#00c853] rounded-lg m-6 p-6" onclick="window.location.href='https://pages.razorpay.com/pl_Qt1wcHSC3luGyq/view'" style="cursor: pointer;">
                     <h3 class="text-2xl font-bold text-center text-[#00c853] mb-4">
                         Decide Your Price for the Video Course
                     </h3>
@@ -672,18 +689,18 @@
                     </p>
                     <img src="https://metageeks-technologies.github.io/ebook-html/assets/social-proof/3rd-popup.jpeg" alt="Recent Student Breakthrough" class="py-4 mx-auto mb-4 rounded-lg shadow-lg">
                 </div>
-        <div class="bg-[#e6ffe6] border border-green-500 rounded-lg p-6 mt-6 text-center">
+        <div class="bg-[#e6ffe6] border border-green-500 rounded-lg p-6 m-6 text-center">
             <h3 class="text-xl font-bold text-green-700 mb-2">Our Students Created</h3>
             <p class="text-5xl font-bold text-green-700 mb-2">1000+</p>
             <p class="text-lg text-gray-700">of Real Relationships by using the exact tools you’re about to learn.
                 This is your chance to create the future you deserve.</p>
         </div>
-        <button class="w-full bg-[#0d90ef] text-white py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 mt-6" onclick="window.location.href='https://pages.razorpay.com/pl_Qt1wcHSC3luGyq/view'">
+        <button class="bg-[#0d90ef] text-white px-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 m-6" onclick="window.location.href='https://pages.razorpay.com/pl_Qt1wcHSC3luGyq/view'">
             <span class="text-2xl">✅</span>
                     <span class="text-2xl">👇</span>
                     <span>Yes, I want to decide the price</span>
         </button>
-        <button class="w-full bg-gray-200 text-gray-700 py-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 mt-4" onclick="closePopup3()">
+        <button class="bg-gray-200 text-gray-700 px-4 rounded-lg shadow-lg text-xl font-bold flex items-center justify-center space-x-2 m-6" onclick="closePopup3()">
             <span class="text-2xl">❌</span>
             <span>No, I’ll pass on this opportunity</span>
         </button>
@@ -694,12 +711,12 @@
 <div id="popup4" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup4') closePopup4();">
     <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
         <!-- Top Section -->
-        <div class="bg-[#0d90ef] text-white p-6 rounded-t-lg relative">
+        <div class="bg-[#007BFF] text-white p-6 rounded-t-lg relative">
             <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup4()">
                 &times;
             </button>
-            <h3 class="text-3xl md:text-4xl font-bold text-center leading-tight py-4">
-                You Came So Far Because You<br />Want to Change Your Life
+            <h3 class="popup-heading text-center leading-tight py-4">
+                You Came So Far Because You Want Change
             </h3>
         </div>
 
