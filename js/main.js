@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const toast = document.createElement('div');
-        toast.className = 'bg-blue-50 text-dark p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-all duration-500 ease-out opacity-0 translate-x-full';
+        toast.className = 'bg-blue-50 text-dark p-4 rounded-lg shadow-lg flex items-center space-x-3 transform transition-all duration-500 ease-out opacity-0 -translate-x-full';
         toast.innerHTML = `
             <div>
                 <p class="font-semibold">${purchase.name} from ${purchase.city}</p>
@@ -204,14 +204,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Trigger fade-in animation
         setTimeout(() => {
-            toast.classList.remove('opacity-0', 'translate-x-full');
+            toast.classList.remove('opacity-0', '-translate-x-full');
             toast.classList.add('opacity-100', 'translate-x-0');
         }, 100); // Small delay to ensure transition applies
 
         // Auto-close after 5 seconds
         setTimeout(() => {
             toast.classList.remove('opacity-100', 'translate-x-0');
-            toast.classList.add('opacity-0', 'translate-x-full');
+            toast.classList.add('opacity-0', '-translate-x-full');
             toast.addEventListener('transitionend', () => toast.remove(), { once: true });
         }, 3000);
     }
