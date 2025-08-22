@@ -85,9 +85,15 @@
             margin-top: 20px;
         }
         .popup-heading {
-            font-size: 1.4rem;
+            font-size: 1.8rem; /* Increased for better visibility and to match screenshot */
             font-weight: 800;
             font-family: 'Poppins', sans-serif;
+            line-height: 1.2; /* Adjusted for compactness */
+        }
+        @media (max-width: 767px) {
+            .popup-heading {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -426,40 +432,38 @@
 
     <!-- Popups -->
 <!-- Popup1 -->
-<div id="popup1" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-4 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup1') closePopup1();">
+<div id="popup1" class="backdrop-blur-20 hidden fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center p-2 pt-10 z-50 w-full h-screen" onclick="if (event.target.id === 'popup1') closePopup1();">
     <div class="bg-white rounded-lg shadow-lg max-w-md w-full max-h-[90vh] overflow-y-auto mt-4">
         <!-- Top Blue Section -->
-        <div class="bg-[#007BFF] text-white p-6 rounded-t-lg relative">
+        <div class="bg-[#007BFF] text-white p-4 rounded-t-lg relative">
             <button class="absolute top-2 right-2 text-white text-3xl font-bold" onclick="closePopup1()">
                 &times;
             </button>
-            <h3 class="popup-heading text-center leading-tight py-4">
-                Special Upgrade: 7-Day Video<br /><small>Course & Personal Call</small>
+            <h3 class="popup-heading text-center leading-tight">
+                Special Upgrade: 7-Day Video Course & Personal Call
             </h3>
         </div>
 
         <!-- Middle Red Bordered Section -->
-        <div class="p-6 border-2 border-red-500 rounded-b-lg mx-4 -mt-4 bg-white relative z-10">
+        <div class="p-4 border-2 border-red-500 rounded-b-lg mx-4 -mt-2 bg-[#fdecec] relative z-10">
             <p class="text-center text-red-600 font-bold text-xl mb-2">YOU'VE BEEN UPGRADED!</p>
             <p class="text-center text-gray-800 text-lg leading-relaxed">
-                You've been upgraded to a <span class="font-bold">₹4999</span> video course<br />
-                with personal coaching! Get it for just <span class="font-bold">₹499</span><br />
-                today only!
+                Get <strong>₹4999 video course</strong> with personal coaching for just <strong>₹499 today only!</strong>
             </p>
         </div>
 
         <!-- Bottom Content -->
-        <div class="p-6 space-y-6">
+        <div class="px-6 py-2 space-y-4">
             <p class="text-center text-gray-700 text-base">
-                Emotionally smart people know that the right guidance is the fastest way to lasting love. This premium package is your express ticket to success in Love & Life.
+                Smart professionals know investing in the right tools is key to financial freedom.
             </p>
 
-            <button class="w-full flex items-center justify-center space-x-2 bg-white border border-gray-300 rounded-lg py-3 px-4 shadow-sm text-gray-800 text-lg font-semibold">
+            <button class="w-full flex items-center justify-center space-x-2 bg-white border border-gray-300 rounded-lg px-4 shadow-sm text-gray-800 text-lg font-semibold">
                 <span class="text-red-500 text-2xl">🍕</span>
-                <span>Same price as a Café date - <span class="text-[#0d90ef]">Life-changing results</span></span>
+                <span>Same cost as lunch - <strong>Life-changing results</strong></span>
             </button>
 
-            <button id="cta-course-4999" class="pulse-button w-full bg-red-600 text-white py-4 rounded-lg shadow-lg text-xl font-bold">
+            <button id="cta-course-4999" class="pulse-button w-full bg-red-500 text-white py-4 rounded-lg shadow-lg text-xl font-bold">
                 90% OFF - Limited Time!
             </button>
 
@@ -469,39 +473,19 @@
             </div>
             <p class="text-center text-red-600 text-sm font-semibold">95% of spots claimed - Act Now!</p>
         <!-- New content from second screenshot -->
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4 relative">
-
-            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+        <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4 relative border-2 border-blue-400">
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                 SPECIAL UPGRADE
             </div>
-            <h3 class="text-2xl font-bold text-center mt-4 mb-4">Complete Success System</h3>
-            <div class="text-center text-lg font-semibold text-[#0d90ef] mb-2">
-                7-Day Course + eBook + 1:1 Call with Raakshitaa
+            <h3 class="font-bold text-center mb-2">Complete Success System</h3>
+            <div class="text-center font-semibold text-blue-600 mb-2">
+                7-Day Course + eBook <br>+ 1:1 Call
             </div>
-            <div class="text-center text-sm text-gray-500 mb-6">
+            <div class="text-center text-sm text-gray-500 mb-2">
                 (₹17,999 value)
             </div>
 
-            <ul class="space-y-3 text-gray-700 text-base">
-                <li class="flex items-start space-x-2">
-                    <span class="text-[#0d90ef] font-bold">✓</span>
-                    <span>Daily video lessons to guide you step by step through each day</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <span class="text-[#0d90ef] font-bold">✓</span>
-                    <span>7-day structured plan to reset your love life with clarity and confidence</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <span class="text-[#0d90ef] font-bold">✓</span>
-                    <span>Complementary 1:1 call with a Raakshitaa after you finish the course</span>
-                </li>
-                <li class="flex items-start space-x-2">
-                    <span class="text-[#0d90ef] font-bold">✓</span>
-                    <span>Lifetime access to all lessons and future updates</span>
-                </li>
-            </ul>
-
-            <div class="bg-[#e0f2fe] border border-[#0d90ef] rounded-lg p-4 flex items-center space-x-4 mt-6">
+            <div class="bg-[#e0f2fe] border border-[#0d90ef] rounded-lg p-2 flex items-center space-x-4">
                 <img src="https://metageeks-technologies.github.io/ebook-html/assets/author-photo.jpg" alt="Raakshita Kapoor" class="w-20 h-20 rounded-full object-cover border-2 border-[#0d90ef]">
                 <div>
                     <p class="font-bold text-[#0d90ef] text-lg">Raakshitaa Kapoor</p>
@@ -509,19 +493,19 @@
                 </div>
             </div>
 
-            <div class="bg-[#e6ffe6] border border-green-500 rounded-lg p-4 text-center mt-6">
-                <p class="text-green-700 font-bold text-lg mb-2">Video Course Success Rate</p>
-                <p class="text-green-700 font-bold text-5xl mb-2">97%</p>
+            <div class="bg-[#e6ffe6] border border-green-500 rounded-lg p-2 text-center mt-6">
+                <p class="text-green-700 font-bold">Video Course Success Rate</p>
+                <p class="text-green-700 font-bold text-2xl">97%</p>
                 <p class="text-gray-700 text-sm">
                     of students who completed the 7-day course got their first date within 30 days
                 </p>
             </div>
-            <p id="discountMessageTop" class="text-center text-green-600 text-lg mt-4 hidden">Discount Applied! You Save ₹4500</p>
-            <p id="priceDisplayTop" class="text-center text-gray-500 text-lg mt-4"><strike> ₹4999</strike></p>
+            <p id="discountMessageTop" class="text-center text-green-600 text-lg mt-2 hidden">Discount Applied! You Save ₹4500</p>
+            <p id="priceDisplayTop" class="text-center text-gray-500 text-lg mt-2"><strike> ₹4999</strike></p>
         </div>
         </div>
 <!-- New content from third screenshot -->
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto">
+        <div class="bg-white px-6 rounded-lg shadow-lg max-w-md w-full mx-auto">
             <p id="discountMessageBottom" class="text-center text-green-600 text-lg mt-4 hidden">Discount Applied! You Save ₹4500</p>
             <p id="priceDisplayBottom" class="text-center text-red-600 font-bold text-4xl mb-4">₹4999</p>
             <div class="flex items-center justify-center space-x-2 mb-6">
@@ -536,8 +520,8 @@
             </button>
             <p id="offer-timer" class="text-center text-red-600 text-sm font-semibold mt-2">Offer Expires in:</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4">
-            <h3 class="text-2xl font-bold text-center mb-4">Just the eBook</h3>
+        <div class="bg-white px-6 rounded-lg shadow-lg max-w-md w-full mx-auto mt-4">
+            <h3 class="text-2xl font-bold text-center">Just the eBook</h3>
             <div class="text-center text-lg font-semibold text-[#0d90ef] mb-2">
                 Weekend Lonely To Loved Reset
             </div>
@@ -576,7 +560,7 @@
             <p class="text-gray-800 text-lg font-semibold">Our students have created hundreds of real, meaningful relationships — no chasing, no confusion.</p>
             <a href="#" onclick="openPopup2()" class="text-blue-600 underline text-sm">No, I’ll live the same life for the next 10 Years</a>
         </div>
-        <div class="bg-grey-100 border border-grey-500 rounded-lg p-4 text-center mt-6">            
+        <div class="bg-grey-100 border border-grey-500 rounded-lg p-4 text-center mt-6 mb-6 pb-6">            
             <p class="font-bold text-lg">Important: 93% of students who go all in with the full system break old patterns and start attracting real, emotionally available partners — within just 6 weeks.</p>
         </div>
         </div>
